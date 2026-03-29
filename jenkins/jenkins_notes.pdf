@@ -1,0 +1,660 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+4 0 obj
+<< /Type /Pages /Count 10 /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R] >>
+endobj
+5 0 obj
+<< /Length 3955 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.100 0.330 0.350 rg 0.00 674.00 595.00 168.00 re f
+1.000 1.000 1.000 rg BT /F2 30.00 Tf 58.00 750.00 Td (Jenkins Study Notes) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 616.00 Td (Big-Picture Summary) Tj ET
+0.880 0.600 0.200 rg 44.00 614.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 611.00 m 537.00 611.00 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 586.98 Td (These notes show how Jenkins fits into a modern DevOps workflow:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 562.18 Td (Jenkins acts as the automation engine for build, test, scan, and deploy tasks.) Tj ET
+0.880 0.600 0.200 rg 64.00 566.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 543.38 Td (Pipelines should be stored as code in a `Jenkinsfile`, not maintained manually) Tj ET
+0.880 0.600 0.200 rg 64.00 547.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 526.58 Td (in the UI.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 507.78 Td (Heavy build work should run on agents, not on the controller.) Tj ET
+0.880 0.600 0.200 rg 64.00 511.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 488.98 Td (Repeated pipeline logic should move into shared libraries.) Tj ET
+0.880 0.600 0.200 rg 64.00 492.98 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 470.18 Td (Security checks should run early in CI, before deployment.) Tj ET
+0.880 0.600 0.200 rg 64.00 474.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 451.38 Td (Deployment to Kubernetes should be handled in a GitOps-friendly way, with Argo) Tj ET
+0.880 0.600 0.200 rg 64.00 455.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 434.58 Td (CD syncing the cluster from Git.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 415.78 Td (Monitoring and notifications complete the feedback loop so failures are visible) Tj ET
+0.880 0.600 0.200 rg 64.00 419.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 398.98 Td (immediately.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 364.98 Td (Core Jenkins Concepts Covered) Tj ET
+0.880 0.600 0.200 rg 44.00 362.98 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 359.98 m 537.00 359.98 l S
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 328.10 Td (CI/CD Basics) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 303.08 Td (CI means continuously integrating code changes through automated build and validation) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 286.05 Td (steps. CD means continuously delivering or deploying the tested output to later) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 269.03 Td (environments or production. Jenkins sits in the middle of this flow and coordinates) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 252.01 Td (the sequence.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 226.98 Td (The practical value is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 202.18 Td (quick feedback for developers) Tj ET
+0.880 0.600 0.200 rg 64.00 206.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 183.38 Td (fewer manual deployment steps) Tj ET
+0.880 0.600 0.200 rg 64.00 187.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 164.58 Td (repeatable builds) Tj ET
+0.880 0.600 0.200 rg 64.00 168.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 145.78 Td (traceability from commit to deployment) Tj ET
+0.880 0.600 0.200 rg 64.00 149.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 126.98 Td (easier rollback and troubleshooting) Tj ET
+0.880 0.600 0.200 rg 64.00 130.98 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 100.11 Td (Jenkins Building Blocks) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 75.08 Td (A useful mental model is:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 1 of 10) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4966 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 747.20 Td (Controller: the Jenkins server that stores configuration, schedules jobs, and) Tj ET
+0.880 0.600 0.200 rg 64.00 751.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 730.40 Td (coordinates work) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 711.60 Td (Agent or node: the machine where builds actually run) Tj ET
+0.880 0.600 0.200 rg 64.00 715.60 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 692.80 Td (Executor: a slot on a node that can run a build) Tj ET
+0.880 0.600 0.200 rg 64.00 696.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 674.00 Td (Job or project: a configured unit of work) Tj ET
+0.880 0.600 0.200 rg 64.00 678.00 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 655.20 Td (Build: one execution of a job) Tj ET
+0.880 0.600 0.200 rg 64.00 659.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 636.40 Td (Pipeline: the code-defined delivery workflow) Tj ET
+0.880 0.600 0.200 rg 64.00 640.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 617.60 Td (Stage: a logical phase such as Build, Test, Scan, or Deploy) Tj ET
+0.880 0.600 0.200 rg 64.00 621.60 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 598.80 Td (Step: the smallest runnable action inside a stage) Tj ET
+0.880 0.600 0.200 rg 64.00 602.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 580.00 Td (Workspace: the temporary directory where the job executes) Tj ET
+0.880 0.600 0.200 rg 64.00 584.00 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 546.00 Td (Section-by-Section Notes) Tj ET
+0.880 0.600 0.200 rg 44.00 544.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 541.00 m 537.00 541.00 l S
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 509.13 Td (1. Jenkins Setup on a VM or EC2) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 484.10 Td (Start by preparing the machine that will host Jenkins. A common setup uses AWS EC2) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 467.08 Td (for the controller and a separate EC2 machine for the worker.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 442.05 Td (Main ideas:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 417.25 Td (Install Java first because Jenkins requires it.) Tj ET
+0.880 0.600 0.200 rg 64.00 421.25 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 398.45 Td (Keep the controller stable and reachable over the network.) Tj ET
+0.880 0.600 0.200 rg 64.00 402.45 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 379.65 Td (Open only the ports you truly need, usually SSH and Jenkins web access during) Tj ET
+0.880 0.600 0.200 rg 64.00 383.65 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 362.85 Td (setup.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 344.05 Td (Think ahead about where builds will run. A controller-only design is fine for) Tj ET
+0.880 0.600 0.200 rg 64.00 348.05 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 327.25 Td (learning, but multi-node is better for real projects.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 308.23 Td (Repository-based setup highlights:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 283.43 Td (A practical setup provisions a dedicated Jenkins controller on AWS.) Tj ET
+0.880 0.600 0.200 rg 64.00 287.43 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 264.63 Td (Docker is also installed on the controller for the larger project flow.) Tj ET
+0.880 0.600 0.200 rg 64.00 268.63 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 245.83 Td (A separate worker node handles build execution.) Tj ET
+0.880 0.600 0.200 rg 64.00 249.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 226.81 Td (Best-practice interpretation:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 202.01 Td (For learning, a single VM is enough.) Tj ET
+0.880 0.600 0.200 rg 64.00 206.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 183.21 Td (For real CI/CD, split control-plane work from execution work.) Tj ET
+0.880 0.600 0.200 rg 64.00 187.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 164.41 Td (Avoid letting the controller become a general-purpose build box.) Tj ET
+0.880 0.600 0.200 rg 64.00 168.41 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 137.53 Td (2. Jenkins Installation) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 112.51 Td (The installation flow is the standard Jenkins pattern:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 87.71 Td (install Java) Tj ET
+0.880 0.600 0.200 rg 64.00 91.71 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 68.91 Td (add the Jenkins package repository) Tj ET
+0.880 0.600 0.200 rg 64.00 72.91 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 2 of 10) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 4623 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 753.20 Td (install Jenkins) Tj ET
+0.880 0.600 0.200 rg 64.00 757.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 734.40 Td (start the service) Tj ET
+0.880 0.600 0.200 rg 64.00 738.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 715.60 Td (open the web UI) Tj ET
+0.880 0.600 0.200 rg 64.00 719.60 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 696.80 Td (unlock Jenkins with the initial admin password) Tj ET
+0.880 0.600 0.200 rg 64.00 700.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 678.00 Td (install the recommended plugins) Tj ET
+0.880 0.600 0.200 rg 64.00 682.00 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 659.20 Td (create the first admin user) Tj ET
+0.880 0.600 0.200 rg 64.00 663.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 640.18 Td (What matters conceptually:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 615.38 Td (Installation is only the start; plugin choice and credentials setup shape the) Tj ET
+0.880 0.600 0.200 rg 64.00 619.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 598.58 Td (real platform.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 579.78 Td (Jenkins becomes valuable after it is connected to Git, build tools,) Tj ET
+0.880 0.600 0.200 rg 64.00 583.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 562.98 Td (credentials, agents, scanners, and notification systems.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 536.10 Td (3. Dashboard, Jobs, and UI Navigation) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 511.08 Td (This part introduces how Jenkins is organized.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 486.05 Td (Useful things to understand:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 461.25 Td (The dashboard lists jobs and their recent status.) Tj ET
+0.880 0.600 0.200 rg 64.00 465.25 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 442.45 Td (Each job has build history, console logs, configuration, and artifacts.) Tj ET
+0.880 0.600 0.200 rg 64.00 446.45 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 423.65 Td (Jenkins supports multiple job types, but the important comparison is Freestyle) Tj ET
+0.880 0.600 0.200 rg 64.00 427.65 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 406.85 Td (versus Pipeline.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 387.83 Td (Simple rule of thumb:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 363.03 Td (Freestyle is good for learning or very small one-off tasks.) Tj ET
+0.880 0.600 0.200 rg 64.00 367.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 344.23 Td (Pipeline is the preferred model for real delivery workflows because it is) Tj ET
+0.880 0.600 0.200 rg 64.00 348.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 327.43 Td (versioned, reviewable, and reproducible.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 300.55 Td (4. Freestyle Project) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 275.53 Td (The Freestyle project section usually serves as the first hands-on example.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 250.51 Td (What a Freestyle job teaches well:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 225.71 Td (source code checkout) Tj ET
+0.880 0.600 0.200 rg 64.00 229.71 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 206.91 Td (shell build steps) Tj ET
+0.880 0.600 0.200 rg 64.00 210.91 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 188.11 Td (post-build actions) Tj ET
+0.880 0.600 0.200 rg 64.00 192.11 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 169.31 Td (basic triggers) Tj ET
+0.880 0.600 0.200 rg 64.00 173.31 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 150.28 Td (What it does not scale well for:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 125.48 Td (complex branching logic) Tj ET
+0.880 0.600 0.200 rg 64.00 129.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 106.68 Td (reusable workflows) Tj ET
+0.880 0.600 0.200 rg 64.00 110.68 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 87.88 Td (multi-stage deployments) Tj ET
+0.880 0.600 0.200 rg 64.00 91.88 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 69.08 Td (proper code review of build logic) Tj ET
+0.880 0.600 0.200 rg 64.00 73.08 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 3 of 10) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 4285 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 752.98 Td (Takeaway:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 727.95 Td (Freestyle helps you understand Jenkins execution flow, but serious CI/CD should move) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 710.93 Td (quickly to `Jenkinsfile`-based pipelines.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 678.05 Td (5. Declarative Pipeline) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 653.03 Td (This is one of the most important Jenkins topics.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 628.00 Td (Declarative Pipeline is Jenkins' structured pipeline syntax. It makes pipeline intent) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 610.98 Td (easier to read and maintain. The common building blocks are:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 586.18 Td (`agent`) Tj ET
+0.880 0.600 0.200 rg 64.00 590.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 567.38 Td (`stages`) Tj ET
+0.880 0.600 0.200 rg 64.00 571.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 548.58 Td (`stage`) Tj ET
+0.880 0.600 0.200 rg 64.00 552.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 529.78 Td (`steps`) Tj ET
+0.880 0.600 0.200 rg 64.00 533.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 510.98 Td (`environment`) Tj ET
+0.880 0.600 0.200 rg 64.00 514.98 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 492.18 Td (`post`) Tj ET
+0.880 0.600 0.200 rg 64.00 496.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 473.16 Td (Why declarative pipelines matter:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 448.36 Td (the workflow lives in Git alongside the application) Tj ET
+0.880 0.600 0.200 rg 64.00 452.36 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 429.56 Td (changes can be code-reviewed) Tj ET
+0.880 0.600 0.200 rg 64.00 433.56 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 410.76 Td (the same pipeline can run across branches) Tj ET
+0.880 0.600 0.200 rg 64.00 414.76 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 391.96 Td (stage status is easier to visualize) Tj ET
+0.880 0.600 0.200 rg 64.00 395.96 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 373.16 Td (the team gets a single source of truth) Tj ET
+0.880 0.600 0.200 rg 64.00 377.16 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 354.13 Td (Typical pipeline flow:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 329.33 Td (checkout code) Tj ET
+0.880 0.600 0.200 rg 64.00 333.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 310.53 Td (install dependencies) Tj ET
+0.880 0.600 0.200 rg 64.00 314.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 291.73 Td (run tests) Tj ET
+0.880 0.600 0.200 rg 64.00 295.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 272.93 Td (build the application) Tj ET
+0.880 0.600 0.200 rg 64.00 276.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 254.13 Td (build container images) Tj ET
+0.880 0.600 0.200 rg 64.00 258.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 235.33 Td (scan for vulnerabilities) Tj ET
+0.880 0.600 0.200 rg 64.00 239.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 216.53 Td (push artifacts or images) Tj ET
+0.880 0.600 0.200 rg 64.00 220.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 197.73 Td (update deployment configuration) Tj ET
+0.880 0.600 0.200 rg 64.00 201.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 178.71 Td (Best practice:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 153.69 Td (Store the pipeline in a root-level `Jenkinsfile` and keep it small by moving repeated) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 136.66 Td (logic into shared libraries.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 103.79 Td (6. Jenkins Agents and Multi-Node Setup) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 78.76 Td (A practical Jenkins setup often expands from one machine into a controller plus) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 4 of 10) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 4368 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (worker model.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 729.95 Td (Why agents are important:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 705.15 Td (they isolate build workloads from the controller) Tj ET
+0.880 0.600 0.200 rg 64.00 709.15 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 686.35 Td (they allow parallelism) Tj ET
+0.880 0.600 0.200 rg 64.00 690.35 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 667.55 Td (they let you attach tool-specific machines, for example Linux, Docker-capable,) Tj ET
+0.880 0.600 0.200 rg 64.00 671.55 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 650.75 Td (or Kubernetes-connected workers) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 631.73 Td (A practical setup can use a separate worker EC2 instance configured through SSH.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 606.70 Td (Important setup details:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 581.90 Td (install Java on the worker) Tj ET
+0.880 0.600 0.200 rg 64.00 585.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 563.10 Td (create SSH keys on the controller) Tj ET
+0.880 0.600 0.200 rg 64.00 567.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 544.30 Td (place the public key on the worker) Tj ET
+0.880 0.600 0.200 rg 64.00 548.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 525.50 Td (add a permanent node in Jenkins) Tj ET
+0.880 0.600 0.200 rg 64.00 529.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 506.70 Td (assign labels) Tj ET
+0.880 0.600 0.200 rg 64.00 510.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 487.90 Td (use SSH credentials for connection) Tj ET
+0.880 0.600 0.200 rg 64.00 491.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 469.10 Td (install Docker and build tools on the worker) Tj ET
+0.880 0.600 0.200 rg 64.00 473.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 450.08 Td (Operational lesson:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 425.28 Td (the controller should orchestrate) Tj ET
+0.880 0.600 0.200 rg 64.00 429.28 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 406.48 Td (the worker should execute builds) Tj ET
+0.880 0.600 0.200 rg 64.00 410.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 387.46 Td (One caution:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 362.43 Td (A quick-fix lab approach sometimes uses `chmod 777 /var/run/docker.sock`, but that is) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 345.41 Td (too permissive for production. Prefer a safer Docker permission model.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 312.53 Td (7. Pipeline Flow) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 287.51 Td (At this point, the focus shifts from syntax to flow.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 262.49 Td (What to watch for in a pipeline:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 237.69 Td (where credentials are stored) Tj ET
+0.880 0.600 0.200 rg 64.00 241.69 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 218.89 Td (how tools are injected) Tj ET
+0.880 0.600 0.200 rg 64.00 222.89 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 200.09 Td (how stages map to real SDLC phases) Tj ET
+0.880 0.600 0.200 rg 64.00 204.09 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 181.29 Td (where failures stop the pipeline) Tj ET
+0.880 0.600 0.200 rg 64.00 185.29 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 162.49 Td (which outputs are archived or published) Tj ET
+0.880 0.600 0.200 rg 64.00 166.49 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 143.46 Td (This is the point where Jenkins stops feeling like a UI tool and starts feeling like) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 126.44 Td (a programmable delivery platform.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 93.56 Td (8. Shared Libraries) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 68.54 Td (Shared libraries are the answer to repeated pipeline logic.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 5 of 10) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 4488 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 746.98 Td (Problem they solve:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 722.18 Td (many teams copy and paste the same pipeline blocks across repositories) Tj ET
+0.880 0.600 0.200 rg 64.00 726.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 703.38 Td (duplicated pipeline code becomes hard to maintain) Tj ET
+0.880 0.600 0.200 rg 64.00 707.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 684.58 Td (changes to build policy or deployment policy become painful) Tj ET
+0.880 0.600 0.200 rg 64.00 688.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 665.55 Td (Shared libraries let teams move common logic into reusable functions and classes.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 640.53 Td (Common structure:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 615.73 Td (`vars/` for reusable global steps) Tj ET
+0.880 0.600 0.200 rg 64.00 619.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 596.93 Td (`src/` for Groovy classes) Tj ET
+0.880 0.600 0.200 rg 64.00 600.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 578.13 Td (`resources/` for bundled assets or templates) Tj ET
+0.880 0.600 0.200 rg 64.00 582.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 559.10 Td (Typical use cases:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 534.30 Td (standard checkout logic) Tj ET
+0.880 0.600 0.200 rg 64.00 538.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 515.50 Td (Docker build helpers) Tj ET
+0.880 0.600 0.200 rg 64.00 519.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 496.70 Td (Kubernetes deployment wrappers) Tj ET
+0.880 0.600 0.200 rg 64.00 500.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 477.90 Td (security scan wrappers) Tj ET
+0.880 0.600 0.200 rg 64.00 481.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 459.10 Td (notification helpers) Tj ET
+0.880 0.600 0.200 rg 64.00 463.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 440.30 Td (company-wide stage policies) Tj ET
+0.880 0.600 0.200 rg 64.00 444.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 421.28 Td (Real-world meaning of this chapter:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 396.26 Td (Once you understand shared libraries, you move from "I can write one Jenkinsfile" to) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 379.23 Td ("I can build a maintainable CI/CD platform.") Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 346.36 Td (9. User Management and Role-Based Access) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 321.33 Td (This section is about controlling who can see, configure, and run what inside) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 304.31 Td (Jenkins.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 279.29 Td (Role-based access becomes important because real teams need different access levels:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 254.49 Td (admin) Tj ET
+0.880 0.600 0.200 rg 64.00 258.49 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 235.69 Td (developer) Tj ET
+0.880 0.600 0.200 rg 64.00 239.69 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 216.89 Td (read-only viewer) Tj ET
+0.880 0.600 0.200 rg 64.00 220.89 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 198.09 Td (team-specific pipeline owners) Tj ET
+0.880 0.600 0.200 rg 64.00 202.09 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 179.06 Td (Good RBAC design should answer:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 154.26 Td (who can configure Jenkins globally) Tj ET
+0.880 0.600 0.200 rg 64.00 158.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 135.46 Td (who can create or edit jobs) Tj ET
+0.880 0.600 0.200 rg 64.00 139.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 116.66 Td (who can trigger builds) Tj ET
+0.880 0.600 0.200 rg 64.00 120.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 97.86 Td (who can view secrets or credentials) Tj ET
+0.880 0.600 0.200 rg 64.00 101.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 79.06 Td (who can administer agents) Tj ET
+0.880 0.600 0.200 rg 64.00 83.06 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 6 of 10) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 4658 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (Best-practice takeaway:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 730.18 Td (give the smallest permissions required) Tj ET
+0.880 0.600 0.200 rg 64.00 734.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 711.38 Td (avoid giving everyone admin) Tj ET
+0.880 0.600 0.200 rg 64.00 715.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 692.58 Td (separate global permissions from item-specific permissions) Tj ET
+0.880 0.600 0.200 rg 64.00 696.58 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 665.70 Td (10. Shared Library Real-Time Use Case) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 640.68 Td (In real-world usage, shared libraries appear again in a more realistic context.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 615.65 Td (What this usually means:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 590.85 Td (the team wraps repetitive steps like scan, build, push, and notify into library) Tj ET
+0.880 0.600 0.200 rg 64.00 594.85 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 574.05 Td (functions) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 555.25 Td (multiple projects can follow one standard pipeline model) Tj ET
+0.880 0.600 0.200 rg 64.00 559.25 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 536.45 Td (changes can be made centrally instead of editing dozens of repositories) Tj ET
+0.880 0.600 0.200 rg 64.00 540.45 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 517.43 Td (This is the point where Jenkins starts supporting platform engineering rather than) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 500.41 Td (isolated job creation.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 467.53 Td (11. DevSecOps with OWASP, Trivy, and SonarQube) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 442.51 Td (This section pushes security to the left side of the pipeline.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 417.48 Td (Each tool has a different role:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 392.68 Td (SonarQube: static code quality and security analysis) Tj ET
+0.880 0.600 0.200 rg 64.00 396.68 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 373.88 Td (OWASP Dependency Check: identifies risky third-party dependencies) Tj ET
+0.880 0.600 0.200 rg 64.00 377.88 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 355.08 Td (Trivy: scans filesystems or container images for vulnerabilities) Tj ET
+0.880 0.600 0.200 rg 64.00 359.08 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 336.06 Td (Why all three are useful together:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 311.26 Td (source code issues are caught early) Tj ET
+0.880 0.600 0.200 rg 64.00 315.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 292.46 Td (dependency risk is surfaced before deployment) Tj ET
+0.880 0.600 0.200 rg 64.00 296.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 273.66 Td (container-level risk is checked before images move forward) Tj ET
+0.880 0.600 0.200 rg 64.00 277.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 254.63 Td (Best practice from this section:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 229.83 Td (fail the pipeline when critical issues appear) Tj ET
+0.880 0.600 0.200 rg 64.00 233.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 211.03 Td (do not treat security reports as optional reading) Tj ET
+0.880 0.600 0.200 rg 64.00 215.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 192.23 Td (attach scanning to the normal build path, not to a separate manual process) Tj ET
+0.880 0.600 0.200 rg 64.00 196.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 173.21 Td (The surrounding setup work usually includes:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 148.41 Td (install the Jenkins plugins) Tj ET
+0.880 0.600 0.200 rg 64.00 152.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 129.61 Td (configure the tools in `Manage Jenkins`) Tj ET
+0.880 0.600 0.200 rg 64.00 133.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 110.81 Td (add credentials for SonarQube, GitHub, Docker, and email) Tj ET
+0.880 0.600 0.200 rg 64.00 114.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 92.01 Td (create webhooks where needed) Tj ET
+0.880 0.600 0.200 rg 64.00 96.01 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 7 of 10) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 4337 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 755.12 Td (12. Email Notification on Pass or Fail) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 730.10 Td (This is the feedback layer.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 705.08 Td (Email notification matters because a pipeline that fails silently is not much better) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 688.05 Td (than no automation at all.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 663.03 Td (What matters in practice:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 638.23 Td (configure SMTP first) Tj ET
+0.880 0.600 0.200 rg 64.00 642.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 619.43 Td (store email credentials securely) Tj ET
+0.880 0.600 0.200 rg 64.00 623.43 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 600.63 Td (if Gmail is used, use an app password with two-factor authentication enabled) Tj ET
+0.880 0.600 0.200 rg 64.00 604.63 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 581.83 Td (trigger mail on failure, recovery, and optionally success) Tj ET
+0.880 0.600 0.200 rg 64.00 585.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 562.81 Td (Good notification design:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 538.01 Td (include job name, build number, and stage that failed) Tj ET
+0.880 0.600 0.200 rg 64.00 542.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 519.21 Td (link back to Jenkins console output) Tj ET
+0.880 0.600 0.200 rg 64.00 523.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 500.41 Td (avoid noisy mail for every minor event) Tj ET
+0.880 0.600 0.200 rg 64.00 504.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 481.61 Td (notify the right people, not everyone) Tj ET
+0.880 0.600 0.200 rg 64.00 485.61 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 447.61 Td (How the Project Is Assembled) Tj ET
+0.880 0.600 0.200 rg 44.00 445.61 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 442.61 m 537.00 442.61 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 418.58 Td (A clean order to build this kind of project would be:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 393.78 Td (1. Create the Jenkins controller and install Jenkins.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 374.98 Td (2. Create a Jenkins worker and connect it as an agent.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 356.18 Td (3. Install Docker and required CLI tools on the worker.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 337.38 Td (4. Install SonarQube and configure scanner credentials.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 318.58 Td (5. Install OWASP Dependency Check and Trivy.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 299.78 Td (6. Build the CI pipeline.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 280.98 Td (7. Provision or connect the EKS cluster.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 262.18 Td (8. Install Argo CD and connect the cluster and Git repository.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 243.38 Td (9. Build the CD pipeline.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 224.58 Td (10. Install Prometheus and Grafana with Helm.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 205.78 Td (11. Configure alerts and email notifications.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 186.76 Td (This is a valuable learning path because each layer adds one operational capability:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 161.96 Td (automation) Tj ET
+0.880 0.600 0.200 rg 64.00 165.96 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 143.16 Td (scale) Tj ET
+0.880 0.600 0.200 rg 64.00 147.16 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 124.36 Td (reuse) Tj ET
+0.880 0.600 0.200 rg 64.00 128.36 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 105.56 Td (security) Tj ET
+0.880 0.600 0.200 rg 64.00 109.56 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 86.76 Td (deployment consistency) Tj ET
+0.880 0.600 0.200 rg 64.00 90.76 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 8 of 10) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 19 0 R >>
+endobj
+21 0 obj
+<< /Length 3736 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (observability) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 721.20 Td (Strong Technical Takeaways) Tj ET
+0.880 0.600 0.200 rg 44.00 719.20 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 716.20 m 537.00 716.20 l S
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 684.33 Td (Pipeline as Code Is the Turning Point) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 659.30 Td (The biggest maturity jump in Jenkins is moving from UI-managed jobs to code-managed) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 642.28 Td (pipelines.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 617.25 Td (That gives:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 592.45 Td (version history) Tj ET
+0.880 0.600 0.200 rg 64.00 596.45 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 573.65 Td (peer review) Tj ET
+0.880 0.600 0.200 rg 64.00 577.65 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 554.85 Td (safer change management) Tj ET
+0.880 0.600 0.200 rg 64.00 558.85 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 536.05 Td (reusable patterns) Tj ET
+0.880 0.600 0.200 rg 64.00 540.05 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 509.18 Td (Agents Make Jenkins Practical) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 484.15 Td (If everything runs on the controller, Jenkins becomes fragile. Agents bring:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 459.35 Td (safer separation of concerns) Tj ET
+0.880 0.600 0.200 rg 64.00 463.35 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 440.55 Td (cleaner scaling) Tj ET
+0.880 0.600 0.200 rg 64.00 444.55 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 421.75 Td (tool-specific execution environments) Tj ET
+0.880 0.600 0.200 rg 64.00 425.75 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 394.88 Td (Shared Libraries Make Jenkins Maintainable) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 369.86 Td (Without shared libraries, large Jenkins estates become a copy-paste problem. With) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 352.83 Td (them, standards can be enforced centrally.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 319.96 Td (GitOps Complements Jenkins) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 294.93 Td (Jenkins is excellent at CI orchestration. Argo CD is excellent at converging) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 277.91 Td (Kubernetes state from Git. Together they create a cleaner deployment model than) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 260.88 Td (letting Jenkins mutate the cluster directly all the time.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 228.01 Td (Security Must Be Part of the Normal Build Path) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 202.99 Td (This security approach is strong because it treats scanning as required pipeline) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 185.96 Td (behavior, not an optional audit.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 145.96 Td (Important Cautions and Corrections) Tj ET
+0.880 0.600 0.200 rg 44.00 143.96 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 140.96 m 537.00 140.96 l S
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 109.09 Td (Standardize AWS Region Values) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 84.06 Td (Before creating any cloud resources, standardize on one AWS region for EKS, CLI) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 9 of 10) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 21 0 R >>
+endobj
+23 0 obj
+<< /Length 3614 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (config, security groups, and Argo CD connection details.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 722.10 Td (Be Careful with Broad Docker Socket Permissions) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 697.08 Td (Some lab setups use a wide-open Docker socket permission change for convenience. That) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 680.05 Td (is acceptable for a learning environment, but production setups should use a safer) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 663.03 Td (model.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 630.15 Td (Limit Network Exposure) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 605.13 Td (Opening Jenkins, Argo CD, Prometheus, and Grafana to the internet makes learning) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 588.11 Td (easy, but production systems should usually sit behind tighter network controls,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 571.08 Td (authentication, and TLS.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 538.21 Td (Keep Credentials Out of Code) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 513.18 Td (The correct place for tokens, app passwords, registry secrets, and private keys is) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 496.16 Td (Jenkins credentials or a dedicated secrets system, not pipeline text or shell) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 479.13 Td (history.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 439.13 Td (Revision Cheat Sheet) Tj ET
+0.880 0.600 0.200 rg 44.00 437.13 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 434.13 m 537.00 434.13 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 410.33 Td (Jenkins controller coordinates work; agents execute work.) Tj ET
+0.880 0.600 0.200 rg 64.00 414.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 391.53 Td (Freestyle jobs teach basics; pipelines are the scalable approach.) Tj ET
+0.880 0.600 0.200 rg 64.00 395.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 372.73 Td (Declarative Pipeline is preferred for readability and structure.) Tj ET
+0.880 0.600 0.200 rg 64.00 376.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 353.93 Td (`Jenkinsfile` belongs in source control.) Tj ET
+0.880 0.600 0.200 rg 64.00 357.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 335.13 Td (Shared libraries reduce repeated pipeline code.) Tj ET
+0.880 0.600 0.200 rg 64.00 339.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 316.33 Td (Role-based access is necessary once multiple users or teams share Jenkins.) Tj ET
+0.880 0.600 0.200 rg 64.00 320.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 297.53 Td (Security scanning should run before image push and deployment.) Tj ET
+0.880 0.600 0.200 rg 64.00 301.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 278.73 Td (GitOps means Git defines desired cluster state and Argo CD reconciles it.) Tj ET
+0.880 0.600 0.200 rg 64.00 282.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 259.93 Td (Prometheus collects metrics; Grafana visualizes them.) Tj ET
+0.880 0.600 0.200 rg 64.00 263.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 241.13 Td (Notifications close the feedback loop.) Tj ET
+0.880 0.600 0.200 rg 64.00 245.13 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Jenkins Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 10 of 10) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 23 0 R >>
+endobj
+25 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+26 0 obj
+<< /Title (Jenkins Study Notes) /Author (Codex) /Producer (Codex PDF Renderer) >>
+endobj
+xref
+0 27
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000000238 00000 n 
+0000000358 00000 n 
+0000004365 00000 n 
+0000004511 00000 n 
+0000009529 00000 n 
+0000009675 00000 n 
+0000014350 00000 n 
+0000014497 00000 n 
+0000018835 00000 n 
+0000018983 00000 n 
+0000023404 00000 n 
+0000023552 00000 n 
+0000028093 00000 n 
+0000028241 00000 n 
+0000032952 00000 n 
+0000033100 00000 n 
+0000037490 00000 n 
+0000037638 00000 n 
+0000041427 00000 n 
+0000041575 00000 n 
+0000045242 00000 n 
+0000045390 00000 n 
+0000045440 00000 n 
+trailer
+<< /Size 27 /Root 25 0 R /Info 26 0 R >>
+startxref
+45538
+%%EOF

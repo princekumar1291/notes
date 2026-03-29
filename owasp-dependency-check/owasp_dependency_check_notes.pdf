@@ -1,0 +1,489 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+4 0 obj
+<< /Type /Pages /Count 8 /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R] >>
+endobj
+5 0 obj
+<< /Length 4066 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.100 0.330 0.350 rg 0.00 674.00 595.00 168.00 re f
+1.000 1.000 1.000 rg BT /F2 30.00 Tf 58.00 750.00 Td (OWASP Dependency-Check:) Tj ET
+1.000 1.000 1.000 rg BT /F2 30.00 Tf 58.00 716.00 Td (Detailed Study Notes) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 616.00 Td (What OWASP Dependency-Check Is) Tj ET
+0.880 0.600 0.200 rg 44.00 614.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 611.00 m 537.00 611.00 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 586.98 Td (OWASP Dependency-Check is a software composition analysis tool. Its main job is to) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 569.95 Td (inspect the third-party components used by an application and determine whether those) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 552.93 Td (components are associated with known vulnerabilities.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 527.90 Td (It focuses on the dependency layer rather than the application's own custom logic.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 510.88 Td (That makes it different from SonarQube and complementary to it.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 485.86 Td (A simple way to think about it is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 461.06 Td (SonarQube asks whether your own code contains risky patterns or poor-quality) Tj ET
+0.880 0.600 0.200 rg 64.00 465.06 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 444.26 Td (code.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 425.46 Td (Dependency-Check asks whether the libraries, packages, or bundled components) Tj ET
+0.880 0.600 0.200 rg 64.00 429.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 408.66 Td (you depend on are already known to be vulnerable.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 389.63 Td (This is important because modern applications often contain far more third-party code) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 372.61 Td (than first-party code.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 332.61 Td (High-Level Workflow) Tj ET
+0.880 0.600 0.200 rg 44.00 330.61 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 327.61 m 537.00 327.61 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 303.58 Td (The broad workflow of OWASP Dependency-Check looks like this:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 278.78 Td (1. The tool scans a project, build file, dependency manifest, package archive, or) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 261.98 Td (directory.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 243.18 Td (2. It identifies third-party components by reading manifests, metadata, package) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 226.38 Td (names, hashes, file names, and archive contents.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 207.58 Td (3. It gathers evidence that can map each dependency to standardized identifiers.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 188.78 Td (4. It compares those identifiers against vulnerability databases such as CVE data.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 169.98 Td (5. It produces a report showing vulnerable dependencies, severity, and references.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 151.18 Td (6. Optionally, it fails the build if vulnerabilities exceed a policy threshold.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 132.16 Td (The most important internal challenge is identification. Vulnerability matching is) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 115.14 Td (only as good as the dependency identity evidence collected.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 75.14 Td (Internal Working Mechanism) Tj ET
+0.880 0.600 0.200 rg 44.00 73.14 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 70.14 m 537.00 70.14 l S
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (OWASP Dependency-Check: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 487.50 34.00 Td (Page 1 of 8) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4739 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 728.00 Td (1. Dependency Discovery and Evidence Collection) Tj ET
+0.880 0.600 0.200 rg 44.00 726.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 723.00 m 537.00 723.00 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 698.98 Td (Internally, Dependency-Check starts by discovering what components exist in the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 681.95 Td (target project. It can do this from several kinds of input:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 657.15 Td (build files such as Maven or Gradle definitions) Tj ET
+0.880 0.600 0.200 rg 64.00 661.15 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 638.35 Td (manifest or lock files from package managers) Tj ET
+0.880 0.600 0.200 rg 64.00 642.35 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 619.55 Td (archives such as JAR, WAR, or ZIP files) Tj ET
+0.880 0.600 0.200 rg 64.00 623.55 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 600.75 Td (local directories containing binary libraries) Tj ET
+0.880 0.600 0.200 rg 64.00 604.75 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 581.73 Td (The tool then extracts evidence from those dependencies. Evidence may include:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 556.93 Td (package or artifact name) Tj ET
+0.880 0.600 0.200 rg 64.00 560.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 538.13 Td (version string) Tj ET
+0.880 0.600 0.200 rg 64.00 542.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 519.33 Td (vendor name) Tj ET
+0.880 0.600 0.200 rg 64.00 523.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 500.53 Td (manifest attributes) Tj ET
+0.880 0.600 0.200 rg 64.00 504.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 481.73 Td (file hash) Tj ET
+0.880 0.600 0.200 rg 64.00 485.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 462.93 Td (embedded metadata) Tj ET
+0.880 0.600 0.200 rg 64.00 466.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 444.13 Td (package ecosystem hints) Tj ET
+0.880 0.600 0.200 rg 64.00 448.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 425.10 Td (This stage is more sophisticated than a simple filename lookup. A single library can) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 408.08 Td (appear with slightly different naming patterns across ecosystems, and dependency) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 391.06 Td (metadata is often inconsistent.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 351.06 Td (2. Analyzer Pipeline) Tj ET
+0.880 0.600 0.200 rg 44.00 349.06 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 346.06 m 537.00 346.06 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 322.03 Td (Dependency-Check uses multiple analyzers internally. Each analyzer specializes in a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 305.01 Td (different source of evidence or ecosystem.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 279.98 Td (Examples of analyzer behavior include:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 255.18 Td (reading Maven coordinates when a Java project is scanned) Tj ET
+0.880 0.600 0.200 rg 64.00 259.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 236.38 Td (extracting package metadata from Node or Python manifests) Tj ET
+0.880 0.600 0.200 rg 64.00 240.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 217.58 Td (inspecting archive manifests for vendor and version information) Tj ET
+0.880 0.600 0.200 rg 64.00 221.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 198.78 Td (using file name patterns when stronger metadata is unavailable) Tj ET
+0.880 0.600 0.200 rg 64.00 202.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 179.76 Td (The analyzers build a combined evidence set for every discovered component. This) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 162.74 Td (multi-analyzer design improves accuracy because one source alone may be weak or) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 145.71 Td (ambiguous.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 120.69 Td (For example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 95.89 Td (a JAR file name might suggest one product) Tj ET
+0.880 0.600 0.200 rg 64.00 99.89 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 77.09 Td (its manifest may suggest a vendor) Tj ET
+0.880 0.600 0.200 rg 64.00 81.09 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (OWASP Dependency-Check: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 487.50 34.00 Td (Page 2 of 8) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 4766 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (the build file may confirm the exact group, artifact, and version) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 736.18 Td (Together these pieces form a better identity than any single clue.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 696.18 Td (3. CPE and Identifier Matching) Tj ET
+0.880 0.600 0.200 rg 44.00 694.18 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 691.18 m 537.00 691.18 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 667.15 Td (After evidence collection, Dependency-Check tries to map dependencies to a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 650.13 Td (standardized product identity, often through Common Platform Enumeration, or CPE,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 633.10 Td (style matching.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 608.08 Td (This is one of the most important internal mechanisms in the tool. Vulnerability) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 591.06 Td (databases usually record affected products in standardized forms, not in the exact) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 574.03 Td (naming used by every package manager.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 549.01 Td (Internally, the tool therefore performs a correlation task:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 524.21 Td (normalize package evidence) Tj ET
+0.880 0.600 0.200 rg 64.00 528.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 505.41 Td (score possible product matches) Tj ET
+0.880 0.600 0.200 rg 64.00 509.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 486.61 Td (choose the most likely identity) Tj ET
+0.880 0.600 0.200 rg 64.00 490.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 467.81 Td (associate the dependency with known CVEs for that product and version) Tj ET
+0.880 0.600 0.200 rg 64.00 471.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 448.78 Td (This stage is powerful but imperfect. If product naming is ambiguous,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 431.76 Td (Dependency-Check may produce:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 406.96 Td (false positives when a library is matched to the wrong product) Tj ET
+0.880 0.600 0.200 rg 64.00 410.96 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 388.16 Td (false negatives when the tool cannot confidently identify the product) Tj ET
+0.880 0.600 0.200 rg 64.00 392.16 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 369.14 Td (That is why evidence quality and suppression tuning are such a big part of real-world) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 352.11 Td (use.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 312.11 Td (4. Vulnerability Data Ingestion and Local Database) Tj ET
+0.880 0.600 0.200 rg 44.00 310.11 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 307.11 m 537.00 307.11 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 283.09 Td (Dependency-Check does not query public vulnerability sites line by line during every) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 266.06 Td (scan. Instead, it usually downloads and maintains local vulnerability data that can) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 249.04 Td (be queried efficiently during analysis.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 224.02 Td (Conceptually, the internal flow is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 199.22 Td (fetch vulnerability feeds or mirrored data) Tj ET
+0.880 0.600 0.200 rg 64.00 203.22 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 180.42 Td (normalize and store the data locally) Tj ET
+0.880 0.600 0.200 rg 64.00 184.42 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 161.62 Td (update the local cache on a schedule) Tj ET
+0.880 0.600 0.200 rg 64.00 165.62 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 142.82 Td (use the local data during scans for fast matching) Tj ET
+0.880 0.600 0.200 rg 64.00 146.82 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 123.79 Td (This design has several advantages:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 98.99 Td (faster scanning after the initial update) Tj ET
+0.880 0.600 0.200 rg 64.00 102.99 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 80.19 Td (less dependence on live network calls during every build) Tj ET
+0.880 0.600 0.200 rg 64.00 84.19 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (OWASP Dependency-Check: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 487.50 34.00 Td (Page 3 of 8) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 4836 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (repeatable matching behavior within a controlled environment) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 736.18 Td (The tool is therefore part scanner and part local vulnerability intelligence cache.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 696.18 Td (5. Version Comparison and Severity Association) Tj ET
+0.880 0.600 0.200 rg 44.00 694.18 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 691.18 m 537.00 691.18 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 667.15 Td (Once a dependency has been mapped to a product identity, the tool checks whether the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 650.13 Td (specific version in use falls within a vulnerable range. If it does, the report) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 633.10 Td (typically includes:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 608.30 Td (CVE identifier) Tj ET
+0.880 0.600 0.200 rg 64.00 612.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 589.50 Td (severity score such as CVSS) Tj ET
+0.880 0.600 0.200 rg 64.00 593.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 570.70 Td (description of the vulnerability) Tj ET
+0.880 0.600 0.200 rg 64.00 574.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 551.90 Td (links to references) Tj ET
+0.880 0.600 0.200 rg 64.00 555.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 532.88 Td (Internally, version comparison can become tricky because:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 508.08 Td (version strings are not always standardized) Tj ET
+0.880 0.600 0.200 rg 64.00 512.08 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 489.28 Td (ecosystems use different versioning rules) Tj ET
+0.880 0.600 0.200 rg 64.00 493.28 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 470.48 Td (vendors may backport fixes without changing version patterns the way users) Tj ET
+0.880 0.600 0.200 rg 64.00 474.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 453.68 Td (expect) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 434.66 Td (This is a known challenge in all software composition analysis tools. The matching) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 417.63 Td (engine is therefore only one part of the problem. Correct version interpretation) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 400.61 Td (matters just as much.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 360.61 Td (6. Suppression, Hints, and Tuning) Tj ET
+0.880 0.600 0.200 rg 44.00 358.61 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 355.61 m 537.00 355.61 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 331.58 Td (Because dependency identification can be noisy, Dependency-Check includes mechanisms) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 314.56 Td (to tune results. Internally, this means the scanner can use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 289.76 Td (suppression rules to ignore specific false positives) Tj ET
+0.880 0.600 0.200 rg 64.00 293.76 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 270.96 Td (hints to improve component identification) Tj ET
+0.880 0.600 0.200 rg 64.00 274.96 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 252.16 Td (configuration switches to enable or disable analyzers) Tj ET
+0.880 0.600 0.200 rg 64.00 256.16 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 233.14 Td (These controls matter because a purely automatic run may overwhelm teams with) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 216.11 Td (findings that are technically possible but operationally irrelevant. Suppression is) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 199.09 Td (not a weakness of the product. It is part of the practical operating model.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 159.09 Td (7. Report Generation) Tj ET
+0.880 0.600 0.200 rg 44.00 157.09 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 154.09 m 537.00 154.09 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 130.06 Td (After matching is complete, Dependency-Check generates structured output. The report) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 113.04 Td (commonly includes:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 88.24 Td (dependency name and version) Tj ET
+0.880 0.600 0.200 rg 64.00 92.24 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 69.44 Td (detected vulnerability identifiers) Tj ET
+0.880 0.600 0.200 rg 64.00 73.44 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (OWASP Dependency-Check: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 487.50 34.00 Td (Page 4 of 8) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 4632 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 753.20 Td (severity values) Tj ET
+0.880 0.600 0.200 rg 64.00 757.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 734.40 Td (evidence used in matching) Tj ET
+0.880 0.600 0.200 rg 64.00 738.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 715.60 Td (references and links) Tj ET
+0.880 0.600 0.200 rg 64.00 719.60 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 696.58 Td (Internally, report generation is the final transformation step. It converts detection) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 679.55 Td (data into formats that humans, CI systems, and dashboards can consume.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 639.55 Td (External Working Mechanism) Tj ET
+0.880 0.600 0.200 rg 44.00 637.55 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 634.55 m 537.00 634.55 l S
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 595.55 Td (1. How Teams Use It in the Delivery Pipeline) Tj ET
+0.880 0.600 0.200 rg 44.00 593.55 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 590.55 m 537.00 590.55 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 566.53 Td (Externally, Dependency-Check is usually run as part of:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 541.73 Td (local developer checks) Tj ET
+0.880 0.600 0.200 rg 64.00 545.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 522.93 Td (Jenkins or other CI jobs) Tj ET
+0.880 0.600 0.200 rg 64.00 526.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 504.13 Td (nightly security scans) Tj ET
+0.880 0.600 0.200 rg 64.00 508.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 485.33 Td (release validation pipelines) Tj ET
+0.880 0.600 0.200 rg 64.00 489.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 466.30 Td (From the outside, the process is straightforward:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 441.50 Td (install or invoke the plugin or CLI) Tj ET
+0.880 0.600 0.200 rg 64.00 445.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 422.70 Td (point it at the project) Tj ET
+0.880 0.600 0.200 rg 64.00 426.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 403.90 Td (let it update vulnerability data if needed) Tj ET
+0.880 0.600 0.200 rg 64.00 407.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 385.10 Td (review the report) Tj ET
+0.880 0.600 0.200 rg 64.00 389.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 366.30 Td (fail the build if policy demands it) Tj ET
+0.880 0.600 0.200 rg 64.00 370.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 347.28 Td (This makes Dependency-Check a practical gate in secure software supply chain) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 330.26 Td (workflows.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 290.26 Td (2. Interaction with Build Ecosystems) Tj ET
+0.880 0.600 0.200 rg 44.00 288.26 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 285.26 m 537.00 285.26 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 261.23 Td (A major part of the external working mechanism is its integration with existing) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 244.21 Td (ecosystems. Dependency-Check can be attached to tools such as:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 219.41 Td (Maven) Tj ET
+0.880 0.600 0.200 rg 64.00 223.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 200.61 Td (Gradle) Tj ET
+0.880 0.600 0.200 rg 64.00 204.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 181.81 Td (Jenkins) Tj ET
+0.880 0.600 0.200 rg 64.00 185.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 163.01 Td (command-line based CI jobs) Tj ET
+0.880 0.600 0.200 rg 64.00 167.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 143.98 Td (That means the tool does not force teams to change how they build software. Instead,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 126.96 Td (it attaches to the existing build pipeline and reads dependency information from the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 109.94 Td (artifacts and manifests the pipeline already uses.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 69.94 Td (3. Interaction with Vulnerability Data Sources) Tj ET
+0.880 0.600 0.200 rg 44.00 67.94 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 64.94 m 537.00 64.94 l S
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (OWASP Dependency-Check: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 487.50 34.00 Td (Page 5 of 8) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 4388 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 742.98 Td (Externally, Dependency-Check relies on vulnerability data feeds or mirrors. In) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 725.95 Td (connected environments, it periodically refreshes its local database. In controlled) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 708.93 Td (enterprise environments, teams may mirror or pre-stage the data.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 683.90 Td (So the outside-facing mechanism includes two external relationships:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 659.10 Td (one with the software project being scanned) Tj ET
+0.880 0.600 0.200 rg 64.00 663.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 640.30 Td (one with the vulnerability intelligence source feeding the scanner) Tj ET
+0.880 0.600 0.200 rg 64.00 644.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 621.28 Td (This is important because if the database is stale, the scan may miss newly disclosed) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 604.26 Td (vulnerabilities even though the scanner itself runs normally.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 564.26 Td (4. Policy Enforcement in CI) Tj ET
+0.880 0.600 0.200 rg 44.00 562.26 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 559.26 m 537.00 559.26 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 535.23 Td (One of the most common external uses is build breaking based on severity. For) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 518.21 Td (example, a team may configure CI to fail if a dependency has a vulnerability above a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 501.18 Td (chosen CVSS threshold.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 476.16 Td (That makes Dependency-Check operationally useful because it can drive behavior:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 451.36 Td (stop unsafe builds from moving forward) Tj ET
+0.880 0.600 0.200 rg 64.00 455.36 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 432.56 Td (require an upgrade, suppression, or risk acceptance) Tj ET
+0.880 0.600 0.200 rg 64.00 436.56 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 413.76 Td (provide auditable evidence that dependency scanning occurred) Tj ET
+0.880 0.600 0.200 rg 64.00 417.76 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 394.74 Td (Without this external policy layer, the report is only informational.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 354.74 Td (5. Developer and Security Team Workflow) Tj ET
+0.880 0.600 0.200 rg 44.00 352.74 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 349.74 m 537.00 349.74 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 325.71 Td (The external remediation loop usually looks like this:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 300.91 Td (1. The tool flags a vulnerable dependency.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 282.11 Td (2. The developer checks whether the dependency is direct or transitive.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 263.31 Td (3. The team upgrades the package, changes dependency constraints, or replaces the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 246.51 Td (library.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 227.71 Td (4. If the finding is incorrect, the team applies a suppression rule with) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 210.91 Td (justification.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 192.11 Td (5. The pipeline is re-run and the report is reviewed again.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 173.09 Td (This shows why software composition analysis is not only about detection. It is also) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 156.06 Td (about package lifecycle management.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 116.06 Td (6. Typical End-to-End Example) Tj ET
+0.880 0.600 0.200 rg 44.00 114.06 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 111.06 m 537.00 111.06 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 87.04 Td (A common external scenario is:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (OWASP Dependency-Check: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 487.50 34.00 Td (Page 6 of 8) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 5005 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 755.20 Td (1. A Jenkins pipeline builds a Java application.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 736.40 Td (2. Dependency-Check runs after dependencies are resolved.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 717.60 Td (3. The tool inspects `pom.xml`, downloaded artifacts, and embedded metadata.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 698.80 Td (4. It matches several libraries against the local CVE database.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 680.00 Td (5. An HTML or XML report is generated.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 661.20 Td (6. The build fails because one library version maps to a high-severity CVE.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 642.40 Td (7. The developer upgrades the dependency and reruns the pipeline.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 623.38 Td (Internally, a large amount of matching and data correlation happened. Externally, the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 606.35 Td (team simply experiences it as dependency risk detection in CI.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 566.35 Td (Strengths) Tj ET
+0.880 0.600 0.200 rg 44.00 564.35 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 561.35 m 537.00 561.35 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 537.55 Td (focused on known-risk third-party components) Tj ET
+0.880 0.600 0.200 rg 64.00 541.55 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 518.75 Td (valuable for modern applications with many dependencies) Tj ET
+0.880 0.600 0.200 rg 64.00 522.75 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 499.95 Td (good CI integration and build-policy enforcement) Tj ET
+0.880 0.600 0.200 rg 64.00 503.95 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 481.15 Td (local vulnerability database improves repeatability and speed) Tj ET
+0.880 0.600 0.200 rg 64.00 485.15 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 462.35 Td (useful for audit and compliance evidence) Tj ET
+0.880 0.600 0.200 rg 64.00 466.35 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 428.35 Td (Limitations) Tj ET
+0.880 0.600 0.200 rg 44.00 426.35 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 423.35 m 537.00 423.35 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 399.55 Td (it depends heavily on correct component identification) Tj ET
+0.880 0.600 0.200 rg 64.00 403.55 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 380.75 Td (CPE matching can create false positives or false negatives) Tj ET
+0.880 0.600 0.200 rg 64.00 384.75 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 361.95 Td (it detects known vulnerabilities, not unknown zero-days) Tj ET
+0.880 0.600 0.200 rg 64.00 365.95 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 343.15 Td (it does not analyze the security quality of your custom business logic) Tj ET
+0.880 0.600 0.200 rg 64.00 347.15 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 324.35 Td (it may need suppression tuning in large or complex projects) Tj ET
+0.880 0.600 0.200 rg 64.00 328.35 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 305.33 Td (A practical mental model is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 280.53 Td (Dependency-Check is about known bad components in your supply chain) Tj ET
+0.880 0.600 0.200 rg 64.00 284.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 261.73 Td (it is not a full code review engine and not a runtime behavior analyzer) Tj ET
+0.880 0.600 0.200 rg 64.00 265.73 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 227.73 Td (Internal vs External Working Mechanism in One View) Tj ET
+0.880 0.600 0.200 rg 44.00 225.73 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 222.73 m 537.00 222.73 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 198.70 Td (Internally, OWASP Dependency-Check collects dependency evidence, maps components to) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 181.68 Td (standardized product identities, queries a local vulnerability database, and builds a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 164.66 Td (structured risk report. Externally, it plugs into build tools, CI pipelines, and) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 147.63 Td (security review processes so organizations can block risky releases or force package) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 130.61 Td (upgrades.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 105.58 Td (In short:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 80.78 Td (internal mechanism explains how the tool identifies and matches dependencies) Tj ET
+0.880 0.600 0.200 rg 64.00 84.78 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (OWASP Dependency-Check: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 487.50 34.00 Td (Page 7 of 8) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 923 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (external mechanism explains how it fits into real build and remediation) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 738.40 Td (workflows) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 719.38 Td (That distinction is essential. The hard part inside the tool is identity resolution) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 702.35 Td (and CVE matching. The hard part outside the tool is deciding what the team should do) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 685.33 Td (when vulnerable dependencies are found.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (OWASP Dependency-Check: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 487.50 34.00 Td (Page 8 of 8) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 19 0 R >>
+endobj
+21 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+22 0 obj
+<< /Title (OWASP Dependency-Check: Detailed Study Notes) /Author (Codex) /Producer (Codex PDF Renderer) >>
+endobj
+xref
+0 23
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000000238 00000 n 
+0000000343 00000 n 
+0000004461 00000 n 
+0000004607 00000 n 
+0000009398 00000 n 
+0000009544 00000 n 
+0000014362 00000 n 
+0000014509 00000 n 
+0000019398 00000 n 
+0000019546 00000 n 
+0000024231 00000 n 
+0000024379 00000 n 
+0000028820 00000 n 
+0000028968 00000 n 
+0000034026 00000 n 
+0000034174 00000 n 
+0000035149 00000 n 
+0000035297 00000 n 
+0000035347 00000 n 
+trailer
+<< /Size 23 /Root 21 0 R /Info 22 0 R >>
+startxref
+35470
+%%EOF

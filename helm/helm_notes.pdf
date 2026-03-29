@@ -1,0 +1,1485 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+4 0 obj
+<< /Type /Pages /Count 24 /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R 38 0 R 40 0 R 42 0 R 44 0 R 46 0 R 48 0 R 50 0 R 52 0 R] >>
+endobj
+5 0 obj
+<< /Length 4008 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.100 0.330 0.350 rg 0.00 674.00 595.00 168.00 re f
+1.000 1.000 1.000 rg BT /F2 30.00 Tf 58.00 750.00 Td (Helm: Detailed Study Notes) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 616.00 Td (What Helm Is) Tj ET
+0.880 0.600 0.200 rg 44.00 614.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 611.00 m 537.00 611.00 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 586.98 Td (Helm is a package manager for Kubernetes. It helps teams define, install, upgrade,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 569.95 Td (and manage Kubernetes applications using reusable packages called charts.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 544.93 Td (A simple way to think about Helm is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 520.13 Td (Kubernetes gives you the raw objects such as Deployments, Services, ConfigMaps,) Tj ET
+0.880 0.600 0.200 rg 64.00 524.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 503.33 Td (and Ingress resources.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 484.53 Td (Helm helps you package those objects together in a reusable and configurable) Tj ET
+0.880 0.600 0.200 rg 64.00 488.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 467.73 Td (form.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 448.70 Td (Without Helm, teams often manage many YAML files manually. With Helm, they can use) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 431.68 Td (one chart template and supply different values for development, staging, and) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 414.66 Td (production.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 374.66 Td (Why Helm Matters) Tj ET
+0.880 0.600 0.200 rg 44.00 372.66 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 369.66 m 537.00 369.66 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 345.63 Td (Helm is useful because Kubernetes applications usually involve many related) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 328.61 Td (resources:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 303.81 Td (Deployments) Tj ET
+0.880 0.600 0.200 rg 64.00 307.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 285.01 Td (Services) Tj ET
+0.880 0.600 0.200 rg 64.00 289.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 266.21 Td (Ingress rules) Tj ET
+0.880 0.600 0.200 rg 64.00 270.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 247.41 Td (ConfigMaps) Tj ET
+0.880 0.600 0.200 rg 64.00 251.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 228.61 Td (Secrets) Tj ET
+0.880 0.600 0.200 rg 64.00 232.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 209.81 Td (autoscaling settings) Tj ET
+0.880 0.600 0.200 rg 64.00 213.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 191.01 Td (persistent storage definitions) Tj ET
+0.880 0.600 0.200 rg 64.00 195.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 171.98 Td (Managing these resources manually becomes difficult when:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 147.18 Td (the same application is deployed to multiple environments) Tj ET
+0.880 0.600 0.200 rg 64.00 151.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 128.38 Td (image tags and replicas change frequently) Tj ET
+0.880 0.600 0.200 rg 64.00 132.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 109.58 Td (different teams need consistent deployment standards) Tj ET
+0.880 0.600 0.200 rg 64.00 113.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 90.78 Td (upgrades and rollbacks must be tracked) Tj ET
+0.880 0.600 0.200 rg 64.00 94.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 71.76 Td (Helm solves this by turning Kubernetes resource definitions into parameterized) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 1 of 24) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4616 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (packages.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 714.98 Td (Core Concepts) Tj ET
+0.880 0.600 0.200 rg 44.00 712.98 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 709.98 m 537.00 709.98 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 685.95 Td (Before understanding the working mechanism, it helps to know the main building) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 668.93 Td (blocks:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 644.13 Td (Chart: the package that contains Kubernetes templates, default values, and) Tj ET
+0.880 0.600 0.200 rg 64.00 648.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 627.33 Td (metadata) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 608.53 Td (Release: a deployed instance of a chart in a cluster) Tj ET
+0.880 0.600 0.200 rg 64.00 612.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 589.73 Td (Values: configuration inputs used to customize templates) Tj ET
+0.880 0.600 0.200 rg 64.00 593.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 570.93 Td (Template: a YAML file with placeholders and logic) Tj ET
+0.880 0.600 0.200 rg 64.00 574.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 552.13 Td (Repository: a place where packaged charts are stored and shared) Tj ET
+0.880 0.600 0.200 rg 64.00 556.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 533.10 Td (One chart can create many releases. For example, the same chart may be installed as:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 508.30 Td (`myapp-dev`) Tj ET
+0.880 0.600 0.200 rg 64.00 512.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 489.50 Td (`myapp-stage`) Tj ET
+0.880 0.600 0.200 rg 64.00 493.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 470.70 Td (`myapp-prod`) Tj ET
+0.880 0.600 0.200 rg 64.00 474.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 451.68 Td (Each release can use different values even though the chart itself is the same.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 411.68 Td (Typical Chart Structure) Tj ET
+0.880 0.600 0.200 rg 44.00 409.68 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 406.68 m 537.00 406.68 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 382.66 Td (A Helm chart usually contains files such as:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 357.86 Td (`Chart.yaml` for metadata) Tj ET
+0.880 0.600 0.200 rg 64.00 361.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 339.06 Td (`values.yaml` for default configuration) Tj ET
+0.880 0.600 0.200 rg 64.00 343.06 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 320.26 Td (`templates/` for Kubernetes manifest templates) Tj ET
+0.880 0.600 0.200 rg 64.00 324.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 301.46 Td (`charts/` for dependent subcharts) Tj ET
+0.880 0.600 0.200 rg 64.00 305.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 282.66 Td (`templates/_helpers.tpl` for reusable template helpers) Tj ET
+0.880 0.600 0.200 rg 64.00 286.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 263.86 Td (`templates/tests/` for chart tests in many charts created from scaffolding) Tj ET
+0.880 0.600 0.200 rg 64.00 267.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 245.06 Td (`crds/` for custom resource definitions when needed) Tj ET
+0.880 0.600 0.200 rg 64.00 249.06 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 226.03 Td (This directory structure is part of Helm's internal working model. Helm expects chart) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 209.01 Td (content in a predictable layout so it can load metadata, merge values, and render) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 191.98 Td (templates correctly.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 151.98 Td (High-Level Workflow) Tj ET
+0.880 0.600 0.200 rg 44.00 149.98 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 146.98 m 537.00 146.98 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 122.96 Td (At a high level, Helm works like this:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 98.16 Td (1. A user runs a Helm command such as install, upgrade, template, or rollback.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 79.36 Td (2. Helm loads the chart and reads default values.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 2 of 24) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 4569 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 755.20 Td (3. Helm merges additional values from files, command-line overrides, or) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 738.40 Td (environment-specific input.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 719.60 Td (4. Helm renders templates into plain Kubernetes YAML manifests.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 700.80 Td (5. Helm sends those manifests to the Kubernetes API server, or prints them if) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 684.00 Td (running in template mode.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 665.20 Td (6. Kubernetes creates or updates resources in the cluster.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 646.40 Td (7. Helm stores release information so future upgrades or rollbacks are possible.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 627.38 Td (This high-level flow is the bridge between the internal and external working) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 610.35 Td (mechanism.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 570.35 Td (Internal Working Mechanism) Tj ET
+0.880 0.600 0.200 rg 44.00 568.35 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 565.35 m 537.00 565.35 l S
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 526.35 Td (1. Chart Loading and Validation) Tj ET
+0.880 0.600 0.200 rg 44.00 524.35 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 521.35 m 537.00 521.35 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 497.33 Td (Internally, Helm begins by loading chart metadata and validating the chart structure.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 480.30 Td (It reads files such as:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 455.50 Td (chart name and version) Tj ET
+0.880 0.600 0.200 rg 64.00 459.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 436.70 Td (application version) Tj ET
+0.880 0.600 0.200 rg 64.00 440.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 417.90 Td (chart dependencies) Tj ET
+0.880 0.600 0.200 rg 64.00 421.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 399.10 Td (default values) Tj ET
+0.880 0.600 0.200 rg 64.00 403.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 380.30 Td (template files) Tj ET
+0.880 0.600 0.200 rg 64.00 384.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 361.28 Td (If required files are missing or malformed, Helm stops before rendering anything.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 344.26 Td (This validation step is important because Helm needs a well-formed package before it) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 327.23 Td (can safely generate Kubernetes manifests.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 287.23 Td (2. Values Loading and Merge Logic) Tj ET
+0.880 0.600 0.200 rg 44.00 285.23 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 282.23 m 537.00 282.23 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 258.21 Td (One of Helm's most important internal mechanisms is values merging. Helm combines) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 241.18 Td (configuration from multiple sources:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 216.38 Td (defaults in `values.yaml`) Tj ET
+0.880 0.600 0.200 rg 64.00 220.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 197.58 Td (extra values files such as `values-dev.yaml` or `values-prod.yaml`) Tj ET
+0.880 0.600 0.200 rg 64.00 201.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 178.78 Td (command-line overrides such as `--set`) Tj ET
+0.880 0.600 0.200 rg 64.00 182.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 159.76 Td (The merge result becomes the final values object used during template rendering.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 134.74 Td (This is a powerful design because it allows:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 109.94 Td (one reusable chart) Tj ET
+0.880 0.600 0.200 rg 64.00 113.94 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 91.14 Td (many environment-specific deployments) Tj ET
+0.880 0.600 0.200 rg 64.00 95.14 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 72.34 Td (controlled overrides without copying entire YAML sets) Tj ET
+0.880 0.600 0.200 rg 64.00 76.34 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 3 of 24) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 4667 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (Internally, Helm resolves precedence so that the most specific value wins. That means) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 737.95 Td (a command-line override can replace a default defined in the chart.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 697.95 Td (3. Template Rendering Engine) Tj ET
+0.880 0.600 0.200 rg 44.00 695.95 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 692.95 m 537.00 692.95 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 668.93 Td (The template rendering engine is the core of Helm's internal behavior. Templates) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 651.90 Td (inside the `templates/` directory are not plain YAML. They contain placeholders and) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 634.88 Td (logic expressions.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 609.86 Td (Helm processes templates by:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 585.06 Td (loading the template files) Tj ET
+0.880 0.600 0.200 rg 64.00 589.06 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 566.26 Td (injecting the merged values and chart metadata) Tj ET
+0.880 0.600 0.200 rg 64.00 570.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 547.46 Td (applying helper functions and template expressions) Tj ET
+0.880 0.600 0.200 rg 64.00 551.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 528.66 Td (producing final YAML manifests) Tj ET
+0.880 0.600 0.200 rg 64.00 532.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 509.63 Td (This means Helm is not deploying templates directly. It first transforms them into) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 492.61 Td (normal Kubernetes resource definitions.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 467.58 Td (Template rendering commonly controls:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 442.78 Td (image names and tags) Tj ET
+0.880 0.600 0.200 rg 64.00 446.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 423.98 Td (replica counts) Tj ET
+0.880 0.600 0.200 rg 64.00 427.98 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 405.18 Td (resource limits and requests) Tj ET
+0.880 0.600 0.200 rg 64.00 409.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 386.38 Td (labels and annotations) Tj ET
+0.880 0.600 0.200 rg 64.00 390.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 367.58 Td (environment variables) Tj ET
+0.880 0.600 0.200 rg 64.00 371.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 348.78 Td (conditional resources such as optional Ingress or autoscaling objects) Tj ET
+0.880 0.600 0.200 rg 64.00 352.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 329.76 Td (This internal rendering step is why Helm is more flexible than static YAML files.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 289.76 Td (4. Helper Templates and Reusability) Tj ET
+0.880 0.600 0.200 rg 44.00 287.76 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 284.76 m 537.00 284.76 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 260.74 Td (Helm supports reusable helper logic, often stored in `_helpers.tpl`. Internally,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 243.71 Td (helpers reduce duplication by centralizing repeated template fragments such as:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 218.91 Td (naming conventions) Tj ET
+0.880 0.600 0.200 rg 64.00 222.91 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 200.11 Td (label blocks) Tj ET
+0.880 0.600 0.200 rg 64.00 204.11 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 181.31 Td (selector labels) Tj ET
+0.880 0.600 0.200 rg 64.00 185.31 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 162.51 Td (common annotations) Tj ET
+0.880 0.600 0.200 rg 64.00 166.51 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 143.49 Td (This matters because Kubernetes objects often share repeated metadata. Instead of) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 126.46 Td (copying the same label logic across many files, Helm can render it from one helper) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 109.44 Td (template.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 69.44 Td (5. Dependency Resolution) Tj ET
+0.880 0.600 0.200 rg 44.00 67.44 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 64.44 m 537.00 64.44 l S
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 4 of 24) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 4348 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 742.98 Td (Charts can depend on other charts. Internally, Helm can load and package subcharts so) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 725.95 Td (a parent chart can deploy a larger application stack.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 700.93 Td (Examples:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 676.13 Td (an application chart may depend on a database chart) Tj ET
+0.880 0.600 0.200 rg 64.00 680.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 657.33 Td (a platform chart may include ingress or monitoring components) Tj ET
+0.880 0.600 0.200 rg 64.00 661.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 638.30 Td (Dependency handling allows chart composition. That means teams can build higher-level) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 621.28 Td (deployment packages from smaller reusable units.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 581.28 Td (6. Manifest Generation) Tj ET
+0.880 0.600 0.200 rg 44.00 579.28 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 576.28 m 537.00 576.28 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 552.26 Td (After values are merged and templates are processed, Helm generates plain Kubernetes) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 535.23 Td (manifests. At this point, the internal transformation step is complete.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 510.21 Td (These generated manifests are what Kubernetes will actually receive. Helm therefore) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 493.18 Td (acts as a compiler from chart templates to raw YAML resources.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 468.16 Td (A useful mental model is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 443.36 Td (chart plus values go in) Tj ET
+0.880 0.600 0.200 rg 64.00 447.36 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 424.56 Td (Kubernetes manifests come out) Tj ET
+0.880 0.600 0.200 rg 64.00 428.56 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 405.54 Td (This is one of the most important things to understand about Helm.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 365.54 Td (7. Release State Management) Tj ET
+0.880 0.600 0.200 rg 44.00 363.54 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 360.54 m 537.00 360.54 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 336.51 Td (Helm does more than just render YAML. It also tracks release state. Internally, Helm) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 319.49 Td (stores information about:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 294.69 Td (release name) Tj ET
+0.880 0.600 0.200 rg 64.00 298.69 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 275.89 Td (chart version) Tj ET
+0.880 0.600 0.200 rg 64.00 279.89 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 257.09 Td (values used) Tj ET
+0.880 0.600 0.200 rg 64.00 261.09 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 238.29 Td (rendered manifests) Tj ET
+0.880 0.600 0.200 rg 64.00 242.29 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 219.49 Td (revision history) Tj ET
+0.880 0.600 0.200 rg 64.00 223.49 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 200.46 Td (This release tracking is what makes commands such as upgrade, history, and rollback) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 183.44 Td (possible. Without stored release metadata, Helm would not know what changed between) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 166.42 Td (one deployment and the next.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 126.42 Td (8. Upgrade and Rollback Logic) Tj ET
+0.880 0.600 0.200 rg 44.00 124.42 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 121.42 m 537.00 121.42 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 97.39 Td (When a user runs `helm upgrade`, Helm repeats the render process using the new chart) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 80.37 Td (or values, compares it operationally through the Kubernetes apply path, and records a) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 5 of 24) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 4096 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (new release revision.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 729.95 Td (When a user runs `helm rollback`, Helm uses stored revision data to restore a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 712.93 Td (previous release state.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 687.90 Td (This internal revision model gives Helm an important operational advantage:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 663.10 Td (deployments are versioned) Tj ET
+0.880 0.600 0.200 rg 64.00 667.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 644.30 Td (changes are traceable) Tj ET
+0.880 0.600 0.200 rg 64.00 648.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 625.50 Td (rollback is structured rather than manual) Tj ET
+0.880 0.600 0.200 rg 64.00 629.50 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 591.50 Td (External Working Mechanism) Tj ET
+0.880 0.600 0.200 rg 44.00 589.50 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 586.50 m 537.00 586.50 l S
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 547.50 Td (1. Interaction with Kubernetes) Tj ET
+0.880 0.600 0.200 rg 44.00 545.50 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 542.50 m 537.00 542.50 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 518.48 Td (Externally, Helm works by communicating with the Kubernetes API server using the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 501.46 Td (current cluster context and credentials.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 476.43 Td (From the outside, the process looks like this:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 451.63 Td (the user points Helm to a cluster) Tj ET
+0.880 0.600 0.200 rg 64.00 455.63 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 432.83 Td (Helm renders manifests) Tj ET
+0.880 0.600 0.200 rg 64.00 436.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 414.03 Td (Helm submits those manifests to Kubernetes) Tj ET
+0.880 0.600 0.200 rg 64.00 418.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 395.23 Td (Kubernetes schedules pods and creates the actual runtime resources) Tj ET
+0.880 0.600 0.200 rg 64.00 399.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 376.21 Td (This means Helm is not a replacement for Kubernetes. It is a management layer that) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 359.18 Td (prepares and sends Kubernetes resources.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 319.18 Td (2. Developer Workflow) Tj ET
+0.880 0.600 0.200 rg 44.00 317.18 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 314.18 m 537.00 314.18 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 290.16 Td (Developers often use Helm in a repeatable workflow such as:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 265.36 Td (1. write or modify a chart) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 246.56 Td (2. update values for an environment) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 227.76 Td (3. render locally using `helm template`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 208.96 Td (4. validate with `helm lint`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 190.16 Td (5. install or upgrade in a cluster) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 171.14 Td (This external workflow is important because Helm helps teams shift from manually) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 154.11 Td (editing YAML to maintaining reusable deployment packages.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 114.11 Td (3. CI/CD Integration) Tj ET
+0.880 0.600 0.200 rg 44.00 112.11 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 109.11 m 537.00 109.11 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 85.09 Td (Helm fits naturally into CI/CD pipelines. Common uses include:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 6 of 24) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 4381 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (packaging charts during build) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 736.40 Td (deploying applications after image creation) Tj ET
+0.880 0.600 0.200 rg 64.00 740.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 717.60 Td (upgrading releases in staging or production) Tj ET
+0.880 0.600 0.200 rg 64.00 721.60 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 698.80 Td (validating templates before merge) Tj ET
+0.880 0.600 0.200 rg 64.00 702.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 679.78 Td (A pipeline may do something like:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 654.98 Td (1. build the application image) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 636.18 Td (2. push the image to a registry) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 617.38 Td (3. update the image tag in Helm values) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 598.58 Td (4. run `helm upgrade --install`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 579.78 Td (5. verify rollout status) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 560.75 Td (This makes Helm a deployment automation tool as much as a packaging tool.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 520.75 Td (4. Chart Repositories and Distribution) Tj ET
+0.880 0.600 0.200 rg 44.00 518.75 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 515.75 m 537.00 515.75 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 491.73 Td (Externally, charts are often shared through repositories. A chart repository lets) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 474.70 Td (teams:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 449.90 Td (publish versioned charts) Tj ET
+0.880 0.600 0.200 rg 64.00 453.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 431.10 Td (pull charts from a central source) Tj ET
+0.880 0.600 0.200 rg 64.00 435.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 412.30 Td (reuse vendor or internal platform charts) Tj ET
+0.880 0.600 0.200 rg 64.00 416.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 393.28 Td (This is similar to how package managers share software packages. Helm uses) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 376.26 Td (repositories so teams do not need to copy chart directories manually between) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 359.23 Td (projects.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 319.23 Td (5. Environment Management) Tj ET
+0.880 0.600 0.200 rg 44.00 317.23 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 314.23 m 537.00 314.23 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 290.21 Td (One of Helm's biggest external benefits is environment customization. The same chart) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 273.18 Td (can be reused across:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 248.38 Td (local development) Tj ET
+0.880 0.600 0.200 rg 64.00 252.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 229.58 Td (testing) Tj ET
+0.880 0.600 0.200 rg 64.00 233.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 210.78 Td (staging) Tj ET
+0.880 0.600 0.200 rg 64.00 214.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 191.98 Td (production) Tj ET
+0.880 0.600 0.200 rg 64.00 195.98 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 172.96 Td (Only the values change. This external operating model helps teams keep deployment) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 155.94 Td (structure consistent while still adapting to different replica counts, domains,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 138.91 Td (secrets, resource sizes, or image versions.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 98.91 Td (6. Operations and Day-2 Management) Tj ET
+0.880 0.600 0.200 rg 44.00 96.91 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 93.91 m 537.00 93.91 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 69.89 Td (Externally, Helm helps with day-2 operations after the first deployment:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 7 of 24) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 5004 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 747.20 Td (checking release history) Tj ET
+0.880 0.600 0.200 rg 64.00 751.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 728.40 Td (upgrading versions) Tj ET
+0.880 0.600 0.200 rg 64.00 732.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 709.60 Td (rolling back failed releases) Tj ET
+0.880 0.600 0.200 rg 64.00 713.60 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 690.80 Td (inspecting rendered values and manifests) Tj ET
+0.880 0.600 0.200 rg 64.00 694.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 671.78 Td (This operational lifecycle is why Helm is widely used in real Kubernetes) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 654.75 Td (environments. It is not only for initial installation. It also helps manage change) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 637.73 Td (over time.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 597.73 Td (7. Relationship with GitOps Tools) Tj ET
+0.880 0.600 0.200 rg 44.00 595.73 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 592.73 m 537.00 592.73 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 568.70 Td (Helm is often used together with GitOps tools such as Argo CD or Flux. In that setup:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 543.90 Td (Helm provides chart packaging and templating) Tj ET
+0.880 0.600 0.200 rg 64.00 547.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 525.10 Td (the GitOps tool watches Git and applies the desired release state) Tj ET
+0.880 0.600 0.200 rg 64.00 529.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 506.08 Td (This is an important external mechanism because Helm can either be:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 481.28 Td (run directly by a user or CI pipeline) Tj ET
+0.880 0.600 0.200 rg 64.00 485.28 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 462.48 Td (used indirectly by a GitOps controller) Tj ET
+0.880 0.600 0.200 rg 64.00 466.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 443.46 Td (In both cases, Helm remains the chart rendering and release-definition layer.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 403.46 Td (Common Commands and What They Mean) Tj ET
+0.880 0.600 0.200 rg 44.00 401.46 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 398.46 m 537.00 398.46 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 374.43 Td (Some important Helm commands are:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 349.63 Td (`helm create` to scaffold a new chart) Tj ET
+0.880 0.600 0.200 rg 64.00 353.63 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 330.83 Td (`helm lint` to validate chart structure and template quality) Tj ET
+0.880 0.600 0.200 rg 64.00 334.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 312.03 Td (`helm template` to render manifests locally without deploying) Tj ET
+0.880 0.600 0.200 rg 64.00 316.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 293.23 Td (`helm install` to create a release) Tj ET
+0.880 0.600 0.200 rg 64.00 297.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 274.43 Td (`helm upgrade` to update a release) Tj ET
+0.880 0.600 0.200 rg 64.00 278.43 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 255.63 Td (`helm upgrade --install` to create or update depending on whether the release) Tj ET
+0.880 0.600 0.200 rg 64.00 259.63 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 238.83 Td (exists) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 220.03 Td (`helm rollback` to restore an earlier release revision) Tj ET
+0.880 0.600 0.200 rg 64.00 224.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 201.23 Td (`helm uninstall` to remove a release) Tj ET
+0.880 0.600 0.200 rg 64.00 205.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 182.43 Td (`helm list` to show deployed releases) Tj ET
+0.880 0.600 0.200 rg 64.00 186.43 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 163.63 Td (`helm history` to show release revisions) Tj ET
+0.880 0.600 0.200 rg 64.00 167.63 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 144.83 Td (`helm repo add`, `helm repo update`, and `helm search repo` to work with chart) Tj ET
+0.880 0.600 0.200 rg 64.00 148.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 128.03 Td (repositories) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 109.23 Td (`helm test` to run chart-defined validation tests) Tj ET
+0.880 0.600 0.200 rg 64.00 113.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 90.21 Td (These commands matter because most day-to-day Helm usage is operational rather than) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 73.18 Td (theoretical.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 8 of 24) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 19 0 R >>
+endobj
+21 0 obj
+<< /Length 3979 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 732.00 Td (Helm Commands and Their Use) Tj ET
+0.880 0.600 0.200 rg 44.00 730.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 727.00 m 537.00 727.00 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 702.98 Td (Below is a more practical command reference that explains not only what a command is,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 685.95 Td (but when and why teams use it.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 660.93 Td (Before using some of the examples below, it helps to keep one pattern in mind:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 636.13 Td (release name is the deployed Helm release, such as `hello-world-chart`) Tj ET
+0.880 0.600 0.200 rg 64.00 640.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 617.33 Td (chart path can be `.` when you are standing inside the chart directory) Tj ET
+0.880 0.600 0.200 rg 64.00 621.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 598.53 Td (namespace is the Kubernetes namespace where the release exists) Tj ET
+0.880 0.600 0.200 rg 64.00 602.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 579.73 Td (values file provides environment-specific overrides such as image tag,) Tj ET
+0.880 0.600 0.200 rg 64.00 583.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 562.93 Td (replicas, ingress host, or resource limits) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 536.05 Td (1. `helm create`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 511.03 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 486.23 Td (creates a starter chart directory with default files and templates) Tj ET
+0.880 0.600 0.200 rg 64.00 490.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 467.43 Td (best when you want a quick chart scaffold instead of writing every file) Tj ET
+0.880 0.600 0.200 rg 64.00 471.43 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 450.63 Td (manually) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 431.61 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 406.81 Td (`helm create myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 410.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 387.78 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 362.98 Td (starting a new application deployment chart) Tj ET
+0.880 0.600 0.200 rg 64.00 366.98 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 344.18 Td (learning the standard Helm chart structure) Tj ET
+0.880 0.600 0.200 rg 64.00 348.18 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 317.31 Td (2. `helm lint`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 292.28 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 267.48 Td (checks chart structure and template quality) Tj ET
+0.880 0.600 0.200 rg 64.00 271.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 248.68 Td (catches obvious problems before deployment) Tj ET
+0.880 0.600 0.200 rg 64.00 252.68 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 229.66 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 204.86 Td (`helm lint ./myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 208.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 185.83 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 161.03 Td (before committing a chart) Tj ET
+0.880 0.600 0.200 rg 64.00 165.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 142.23 Td (in CI to reject broken templates early) Tj ET
+0.880 0.600 0.200 rg 64.00 146.23 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 115.36 Td (3. `helm template`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 90.34 Td (Use:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 9 of 24) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 21 0 R >>
+endobj
+23 0 obj
+<< /Length 4257 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (renders chart templates locally without sending anything to Kubernetes) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 736.40 Td (helps inspect the final YAML after values are merged) Tj ET
+0.880 0.600 0.200 rg 64.00 740.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 717.38 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 692.58 Td (`helm template myapp ./myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 696.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 673.78 Td (`helm template myapp ./myapp -f values-prod.yaml`) Tj ET
+0.880 0.600 0.200 rg 64.00 677.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 654.75 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 629.95 Td (debugging templates) Tj ET
+0.880 0.600 0.200 rg 64.00 633.95 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 611.15 Td (checking the exact Deployment, Service, or Ingress YAML Helm will generate) Tj ET
+0.880 0.600 0.200 rg 64.00 615.15 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 584.28 Td (4. `helm install`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 559.25 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 534.45 Td (installs a chart as a new release in the cluster) Tj ET
+0.880 0.600 0.200 rg 64.00 538.45 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 515.65 Td (creates Kubernetes resources for the first time) Tj ET
+0.880 0.600 0.200 rg 64.00 519.65 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 496.63 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 471.83 Td (`helm install myapp ./myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 475.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 453.03 Td (`helm install myapp ./myapp -n dev --create-namespace`) Tj ET
+0.880 0.600 0.200 rg 64.00 457.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 434.01 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 409.21 Td (first deployment of an application) Tj ET
+0.880 0.600 0.200 rg 64.00 413.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 390.41 Td (environment setup for dev, test, or production) Tj ET
+0.880 0.600 0.200 rg 64.00 394.41 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 363.53 Td (5. `helm upgrade`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 338.51 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 313.71 Td (updates an existing release with a changed chart or new values) Tj ET
+0.880 0.600 0.200 rg 64.00 317.71 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 294.91 Td (applies configuration, image, or replica changes) Tj ET
+0.880 0.600 0.200 rg 64.00 298.91 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 275.88 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 251.08 Td (`helm upgrade myapp ./myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 255.08 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 232.28 Td (`helm upgrade myapp ./myapp -f values-prod.yaml`) Tj ET
+0.880 0.600 0.200 rg 64.00 236.28 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 213.26 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 188.46 Td (rolling out a new image tag) Tj ET
+0.880 0.600 0.200 rg 64.00 192.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 169.66 Td (changing environment settings) Tj ET
+0.880 0.600 0.200 rg 64.00 173.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 150.86 Td (updating resource limits, ports, or scaling values) Tj ET
+0.880 0.600 0.200 rg 64.00 154.86 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 123.98 Td (6. `helm upgrade --install`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 98.96 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 74.16 Td (installs the release if it does not exist) Tj ET
+0.880 0.600 0.200 rg 64.00 78.16 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 10 of 24) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 23 0 R >>
+endobj
+25 0 obj
+<< /Length 3889 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (upgrades it if it already exists) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 736.18 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 711.38 Td (`helm upgrade --install myapp ./myapp -n prod`) Tj ET
+0.880 0.600 0.200 rg 64.00 715.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 692.35 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 667.55 Td (CI/CD automation where the pipeline should work for both first-time deploy and) Tj ET
+0.880 0.600 0.200 rg 64.00 671.55 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 650.75 Td (update) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 631.95 Td (reducing conditional deployment logic in scripts) Tj ET
+0.880 0.600 0.200 rg 64.00 635.95 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 605.08 Td (7. `helm uninstall`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 580.05 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 555.25 Td (removes a release and the resources managed by that release) Tj ET
+0.880 0.600 0.200 rg 64.00 559.25 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 536.23 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 511.43 Td (`helm uninstall myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 515.43 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 492.63 Td (`helm uninstall myapp -n dev`) Tj ET
+0.880 0.600 0.200 rg 64.00 496.63 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 473.61 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 448.81 Td (cleaning up test environments) Tj ET
+0.880 0.600 0.200 rg 64.00 452.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 430.01 Td (removing applications no longer needed in a cluster) Tj ET
+0.880 0.600 0.200 rg 64.00 434.01 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 403.13 Td (8. `helm list`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 378.11 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 353.31 Td (shows releases currently known in a namespace or cluster scope) Tj ET
+0.880 0.600 0.200 rg 64.00 357.31 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 334.28 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 309.48 Td (`helm list`) Tj ET
+0.880 0.600 0.200 rg 64.00 313.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 290.68 Td (`helm list -n prod`) Tj ET
+0.880 0.600 0.200 rg 64.00 294.68 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 271.66 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 246.86 Td (checking whether a release exists) Tj ET
+0.880 0.600 0.200 rg 64.00 250.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 228.06 Td (seeing deployed release names and revisions) Tj ET
+0.880 0.600 0.200 rg 64.00 232.06 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 201.18 Td (9. `helm history`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 176.16 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 151.36 Td (shows release revision history) Tj ET
+0.880 0.600 0.200 rg 64.00 155.36 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 132.56 Td (helps track changes over time) Tj ET
+0.880 0.600 0.200 rg 64.00 136.56 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 113.54 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 88.74 Td (`helm history myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 92.74 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 69.71 Td (When teams use it:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 11 of 24) Tj ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 25 0 R >>
+endobj
+27 0 obj
+<< /Length 3921 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 747.20 Td (before rollback) Tj ET
+0.880 0.600 0.200 rg 64.00 751.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 728.40 Td (while investigating failed or risky upgrades) Tj ET
+0.880 0.600 0.200 rg 64.00 732.40 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 701.53 Td (10. `helm rollback`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 676.50 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 651.70 Td (restores a previous release revision) Tj ET
+0.880 0.600 0.200 rg 64.00 655.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 632.90 Td (useful when a new deployment is unhealthy or misconfigured) Tj ET
+0.880 0.600 0.200 rg 64.00 636.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 613.88 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 589.08 Td (`helm rollback myapp 2`) Tj ET
+0.880 0.600 0.200 rg 64.00 593.08 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 570.05 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 545.25 Td (after a failed upgrade) Tj ET
+0.880 0.600 0.200 rg 64.00 549.25 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 526.45 Td (when a new image or values file caused production issues) Tj ET
+0.880 0.600 0.200 rg 64.00 530.45 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 499.58 Td (11. `helm get values`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 474.55 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 449.75 Td (shows the values used by a release) Tj ET
+0.880 0.600 0.200 rg 64.00 453.75 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 430.95 Td (helps compare expected configuration with what is actually deployed) Tj ET
+0.880 0.600 0.200 rg 64.00 434.95 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 411.93 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 387.13 Td (`helm get values myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 391.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 368.33 Td (`helm get values myapp -n prod`) Tj ET
+0.880 0.600 0.200 rg 64.00 372.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 349.31 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 324.51 Td (debugging configuration drift) Tj ET
+0.880 0.600 0.200 rg 64.00 328.51 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 305.71 Td (confirming which overrides were applied to a release) Tj ET
+0.880 0.600 0.200 rg 64.00 309.71 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 278.83 Td (12. `helm get manifest`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 253.81 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 229.01 Td (shows the rendered manifests stored for a release) Tj ET
+0.880 0.600 0.200 rg 64.00 233.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 210.21 Td (helps inspect what Helm actually deployed) Tj ET
+0.880 0.600 0.200 rg 64.00 214.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 191.18 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 166.38 Td (`helm get manifest myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 170.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 147.36 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 122.56 Td (troubleshooting a live release) Tj ET
+0.880 0.600 0.200 rg 64.00 126.56 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 103.76 Td (comparing deployed resources with chart templates) Tj ET
+0.880 0.600 0.200 rg 64.00 107.76 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 76.88 Td (13. `helm repo add`) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 12 of 24) Tj ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 27 0 R >>
+endobj
+29 0 obj
+<< /Length 3698 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 730.18 Td (adds a chart repository to the local Helm client) Tj ET
+0.880 0.600 0.200 rg 64.00 734.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 711.15 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 686.35 Td (`helm repo add bitnami https://charts.bitnami.com/bitnami`) Tj ET
+0.880 0.600 0.200 rg 64.00 690.35 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 667.33 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 642.53 Td (preparing to install charts published by vendors or internal platform teams) Tj ET
+0.880 0.600 0.200 rg 64.00 646.53 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 615.65 Td (14. `helm repo update`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 590.63 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 565.83 Td (refreshes repository metadata so Helm knows the latest available chart versions) Tj ET
+0.880 0.600 0.200 rg 64.00 569.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 546.81 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 522.01 Td (`helm repo update`) Tj ET
+0.880 0.600 0.200 rg 64.00 526.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 502.98 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 478.18 Td (before searching or installing from repositories) Tj ET
+0.880 0.600 0.200 rg 64.00 482.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 459.38 Td (after adding a new repository) Tj ET
+0.880 0.600 0.200 rg 64.00 463.38 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 432.51 Td (15. `helm search repo`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 407.48 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 382.68 Td (searches charts available in configured repositories) Tj ET
+0.880 0.600 0.200 rg 64.00 386.68 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 363.66 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 338.86 Td (`helm search repo nginx`) Tj ET
+0.880 0.600 0.200 rg 64.00 342.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 319.83 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 295.03 Td (discovering reusable charts) Tj ET
+0.880 0.600 0.200 rg 64.00 299.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 276.23 Td (checking exact chart names before installation) Tj ET
+0.880 0.600 0.200 rg 64.00 280.23 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 249.36 Td (16. `helm pull`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 224.34 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 199.54 Td (downloads a chart package locally without installing it) Tj ET
+0.880 0.600 0.200 rg 64.00 203.54 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 180.51 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 155.71 Td (`helm pull bitnami/nginx`) Tj ET
+0.880 0.600 0.200 rg 64.00 159.71 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 136.69 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 111.89 Td (inspecting a chart offline) Tj ET
+0.880 0.600 0.200 rg 64.00 115.89 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 93.09 Td (packaging or reviewing vendor charts before deployment) Tj ET
+0.880 0.600 0.200 rg 64.00 97.09 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 13 of 24) Tj ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 29 0 R >>
+endobj
+31 0 obj
+<< /Length 3779 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 755.12 Td (17. `helm dependency update`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 730.10 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 705.30 Td (downloads or refreshes subchart dependencies defined in `Chart.yaml`) Tj ET
+0.880 0.600 0.200 rg 64.00 709.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 686.28 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 661.48 Td (`helm dependency update ./myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 665.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 642.45 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 617.65 Td (after declaring chart dependencies) Tj ET
+0.880 0.600 0.200 rg 64.00 621.65 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 598.85 Td (before packaging or installing a parent chart) Tj ET
+0.880 0.600 0.200 rg 64.00 602.85 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 571.98 Td (18. `helm package`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 546.95 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 522.15 Td (bundles a chart directory into a versioned archive) Tj ET
+0.880 0.600 0.200 rg 64.00 526.15 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 503.13 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 478.33 Td (`helm package ./myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 482.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 459.31 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 434.51 Td (publishing charts to a repository) Tj ET
+0.880 0.600 0.200 rg 64.00 438.51 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 415.71 Td (versioning internal charts for reuse) Tj ET
+0.880 0.600 0.200 rg 64.00 419.71 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 388.83 Td (19. `helm test`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 363.81 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 339.01 Td (runs chart-defined tests after installation) Tj ET
+0.880 0.600 0.200 rg 64.00 343.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 320.21 Td (verifies that the release behaves as expected) Tj ET
+0.880 0.600 0.200 rg 64.00 324.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 301.18 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 276.38 Td (`helm test myapp`) Tj ET
+0.880 0.600 0.200 rg 64.00 280.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 257.36 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 232.56 Td (after install or upgrade) Tj ET
+0.880 0.600 0.200 rg 64.00 236.56 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 213.76 Td (validating connectivity, startup, or service response) Tj ET
+0.880 0.600 0.200 rg 64.00 217.76 6.00 6.00 re f
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 186.88 Td (20. `helm show values`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 161.86 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 137.06 Td (prints the default values of a chart) Tj ET
+0.880 0.600 0.200 rg 64.00 141.06 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 118.26 Td (helps understand what can be overridden before installation) Tj ET
+0.880 0.600 0.200 rg 64.00 122.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 99.24 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 74.44 Td (`helm show values bitnami/nginx`) Tj ET
+0.880 0.600 0.200 rg 64.00 78.44 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 14 of 24) Tj ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 31 0 R >>
+endobj
+33 0 obj
+<< /Length 4035 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (When teams use it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 730.18 Td (reviewing third-party charts) Tj ET
+0.880 0.600 0.200 rg 64.00 734.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 711.38 Td (preparing custom values files for a new deployment) Tj ET
+0.880 0.600 0.200 rg 64.00 715.38 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 677.38 Td (Practical Command Notes and Examples) Tj ET
+0.880 0.600 0.200 rg 44.00 675.38 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 672.38 m 537.00 672.38 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 648.35 Td (This section adds hands-on commands in the same style teams use during day-to-day) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 631.33 Td (Helm work.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 591.33 Td (1. Create a Helm Chart) Tj ET
+0.880 0.600 0.200 rg 44.00 589.33 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 586.33 m 537.00 586.33 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 562.30 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 537.28 Td (```bash helm create helmchartname ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 512.26 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 487.46 Td (creates a new chart folder with the standard Helm structure) Tj ET
+0.880 0.600 0.200 rg 64.00 491.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 468.66 Td (useful as the first step when building a custom chart) Tj ET
+0.880 0.600 0.200 rg 64.00 472.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 449.63 Td (What gets created:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 424.83 Td (`Chart.yaml`) Tj ET
+0.880 0.600 0.200 rg 64.00 428.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 406.03 Td (`values.yaml`) Tj ET
+0.880 0.600 0.200 rg 64.00 410.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 387.23 Td (`templates/`) Tj ET
+0.880 0.600 0.200 rg 64.00 391.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 368.43 Td (helper files and a starter test template) Tj ET
+0.880 0.600 0.200 rg 64.00 372.43 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 334.43 Td (2. Understanding a Typical Upgrade Command) Tj ET
+0.880 0.600 0.200 rg 44.00 332.43 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 329.43 m 537.00 329.43 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 305.41 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 280.38 Td (```bash helm upgrade helloword-chart . -n hello-world-helm -f values.yaml ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 255.36 Td (Meaning of each part:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 230.34 Td (| Part | Meaning | |---|---| | `helm upgrade` | Updates an existing Helm release | |) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 213.31 Td (`helloword-chart` | Release name already installed | | `.` | Current directory) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 196.29 Td (containing the Helm chart | | `-n hello-world-helm` | Namespace where the release) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 179.26 Td (exists | | `-f values.yaml` | Use values from this file |) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 154.24 Td (This command is one of the most common real-world Helm operations. Teams edit) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 137.22 Td (`values.yaml`, then run `helm upgrade` to apply the new configuration.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 97.22 Td (3. Preview Changes with Helm Diff) Tj ET
+0.880 0.600 0.200 rg 44.00 95.22 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 92.22 m 537.00 92.22 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 68.19 Td (Important note:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 15 of 24) Tj ET
+endstream
+endobj
+34 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 33 0 R >>
+endobj
+35 0 obj
+<< /Length 3987 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 747.20 Td (`helm diff` is not part of core Helm) Tj ET
+0.880 0.600 0.200 rg 64.00 751.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 728.40 Td (it comes from the `helm-diff` plugin) Tj ET
+0.880 0.600 0.200 rg 64.00 732.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 709.38 Td (Plugin install example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 684.35 Td (```bash helm plugin install https://github.com/databus23/helm-diff ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 659.33 Td (The plugin's current docs say Helm 4 users may need:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 634.30 Td (```bash helm plugin install https://github.com/databus23/helm-diff --verify=false ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 609.28 Td (Preview what would change:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 584.26 Td (```bash helm diff upgrade helloword-chart . -n hello-world-helm -f values.yaml) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 567.23 Td (--color ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 542.21 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 517.41 Td (shows the difference between what is currently deployed and what would be) Tj ET
+0.880 0.600 0.200 rg 64.00 521.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 500.61 Td (deployed) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 481.81 Td (helps review changes before running the real upgrade) Tj ET
+0.880 0.600 0.200 rg 64.00 485.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 462.78 Td (If the release does not exist yet or was not previously installed in the normal way,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 445.76 Td (use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 420.74 Td (```bash helm diff upgrade helloword-chart . \\ -n hello-world-helm \\ -f values.yaml \\) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 403.71 Td (--allow-unreleased ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 378.69 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 353.89 Td (allows diffing even when the release is not yet present) Tj ET
+0.880 0.600 0.200 rg 64.00 357.89 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 335.09 Td (helpful when switching charts or checking first-time deployment behavior) Tj ET
+0.880 0.600 0.200 rg 64.00 339.09 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 301.09 Td (4. Apply Updated Values) Tj ET
+0.880 0.600 0.200 rg 44.00 299.09 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 296.09 m 537.00 296.09 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 272.06 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 247.04 Td (```bash helm upgrade helloword-chart . -n hello-world-helm -f values.yaml ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 222.02 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 197.22 Td (applies the changes from the chart and values file to the existing release) Tj ET
+0.880 0.600 0.200 rg 64.00 201.22 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 178.42 Td (common after changing image tags, resources, replica counts, or ingress) Tj ET
+0.880 0.600 0.200 rg 64.00 182.42 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 161.62 Td (settings) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 127.62 Td (5. Roll Back to a Previous Revision) Tj ET
+0.880 0.600 0.200 rg 44.00 125.62 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 122.62 m 537.00 122.62 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 98.59 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 73.57 Td (```bash helm rollback helloword-chart 1 -n hello-world-helm ```) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 16 of 24) Tj ET
+endstream
+endobj
+36 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 35 0 R >>
+endobj
+37 0 obj
+<< /Length 3723 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 746.98 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 722.18 Td (restores the release to revision `1`) Tj ET
+0.880 0.600 0.200 rg 64.00 726.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 703.38 Td (helpful when a recent upgrade introduced a failure) Tj ET
+0.880 0.600 0.200 rg 64.00 707.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 684.35 Td (Before rollback, teams usually check history:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 659.33 Td (```bash helm history helloword-chart -n hello-world-helm ```) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 619.33 Td (6. Compare Two Revisions) Tj ET
+0.880 0.600 0.200 rg 44.00 617.33 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 614.33 m 537.00 614.33 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 590.30 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 565.28 Td (```bash helm diff revision helloword-chart 3 4 -n hello-world-helm ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 540.26 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 515.46 Td (compares revision `3` and revision `4`) Tj ET
+0.880 0.600 0.200 rg 64.00 519.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 496.66 Td (useful when investigating exactly what changed between releases) Tj ET
+0.880 0.600 0.200 rg 64.00 500.66 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 462.66 Td (7. Safe Preview with `--dry-run`) Tj ET
+0.880 0.600 0.200 rg 44.00 460.66 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 457.66 m 537.00 457.66 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 433.63 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 408.61 Td (```bash helm upgrade helloword-chart . -n hello-world-helm -f values.yaml --dry-run) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 391.58 Td (```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 366.56 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 341.76 Td (simulates the upgrade) Tj ET
+0.880 0.600 0.200 rg 64.00 345.76 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 322.96 Td (does not apply anything to Kubernetes) Tj ET
+0.880 0.600 0.200 rg 64.00 326.96 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 303.94 Td (This is one of the safest ways to preview Helm behavior before making a real cluster) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 286.91 Td (change.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 246.91 Td (8. Deeper Debugging with `--debug`) Tj ET
+0.880 0.600 0.200 rg 44.00 244.91 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 241.91 m 537.00 241.91 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 217.89 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 192.86 Td (```bash helm upgrade helloword-chart . -n hello-world-helm -f values.yaml --debug ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 167.84 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 143.04 Td (prints extra debug information) Tj ET
+0.880 0.600 0.200 rg 64.00 147.04 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 124.24 Td (helps when the chart renders unexpectedly or the upgrade fails) Tj ET
+0.880 0.600 0.200 rg 64.00 128.24 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 90.24 Td (9. Most Common Preview Pattern: `--dry-run --debug`) Tj ET
+0.880 0.600 0.200 rg 44.00 88.24 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 85.24 m 537.00 85.24 l S
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 17 of 24) Tj ET
+endstream
+endobj
+38 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 37 0 R >>
+endobj
+39 0 obj
+<< /Length 3842 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 729.95 Td (```bash helm upgrade helloword-chart . -n hello-world-helm -f values.yaml --dry-run) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 712.93 Td (--debug ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 687.90 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 663.10 Td (simulates the change) Tj ET
+0.880 0.600 0.200 rg 64.00 667.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 644.30 Td (prints detailed internal information) Tj ET
+0.880 0.600 0.200 rg 64.00 648.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 625.50 Td (often the best first troubleshooting command for Helm upgrades) Tj ET
+0.880 0.600 0.200 rg 64.00 629.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 606.48 Td (In this output, two value views are especially important:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 581.46 Td (1. `USER-SUPPLIED VALUES` These are the values you directly provided to Helm. 2.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 564.43 Td (`COMPUTED VALUES` These are the final merged values Helm actually uses after) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 547.41 Td (combining chart defaults and overrides.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 522.38 Td (This distinction is important because many Helm issues come from misunderstanding) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 505.36 Td (which values won after merging.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 465.36 Td (10. Generate All YAML Manifests) Tj ET
+0.880 0.600 0.200 rg 44.00 463.36 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 460.36 m 537.00 460.36 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 436.34 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 411.31 Td (```bash helm template helloword . ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 386.29 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 361.49 Td (renders all Kubernetes YAML locally) Tj ET
+0.880 0.600 0.200 rg 64.00 365.49 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 342.69 Td (lets you inspect the final Deployment, Service, ConfigMap, Ingress, and other) Tj ET
+0.880 0.600 0.200 rg 64.00 346.69 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 325.89 Td (objects without applying them) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 306.86 Td (This is especially useful for debugging templates and confirming that variables) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 289.84 Td (resolve correctly.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 249.84 Td (11. Check Chart Errors with Lint) Tj ET
+0.880 0.600 0.200 rg 44.00 247.84 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 244.84 m 537.00 244.84 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 220.82 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 195.79 Td (```bash helm lint . ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 170.77 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 145.97 Td (checks the chart for obvious structural or template problems) Tj ET
+0.880 0.600 0.200 rg 64.00 149.97 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 127.17 Td (should usually be run before install or upgrade) Tj ET
+0.880 0.600 0.200 rg 64.00 131.17 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 93.17 Td (12. Uninstall the Helm Release) Tj ET
+0.880 0.600 0.200 rg 44.00 91.17 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 88.17 m 537.00 88.17 l S
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 18 of 24) Tj ET
+endstream
+endobj
+40 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 39 0 R >>
+endobj
+41 0 obj
+<< /Length 3549 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 729.95 Td (```bash helm uninstall helloword-chart -n hello-world-helm ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 704.93 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 680.13 Td (removes the release and the Kubernetes resources managed by it) Tj ET
+0.880 0.600 0.200 rg 64.00 684.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 661.33 Td (useful for cleanup or removing an application from an environment) Tj ET
+0.880 0.600 0.200 rg 64.00 665.33 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 627.33 Td (13. Add a Helm Repository) Tj ET
+0.880 0.600 0.200 rg 44.00 625.33 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 622.33 m 537.00 622.33 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 598.30 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 573.28 Td (```bash helm repo add bitnami https://charts.bitnami.com/bitnami ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 548.26 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 523.46 Td (adds the Bitnami repository to your local Helm client) Tj ET
+0.880 0.600 0.200 rg 64.00 527.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 504.66 Td (allows you to search and install charts from that repository) Tj ET
+0.880 0.600 0.200 rg 64.00 508.66 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 470.66 Td (14. Check Configured Repositories) Tj ET
+0.880 0.600 0.200 rg 44.00 468.66 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 465.66 m 537.00 465.66 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 441.63 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 416.61 Td (```bash helm repo list ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 391.58 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 366.78 Td (shows all repositories currently added to the local Helm client) Tj ET
+0.880 0.600 0.200 rg 64.00 370.78 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 332.78 Td (15. Update All Helm Repositories) Tj ET
+0.880 0.600 0.200 rg 44.00 330.78 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 327.78 m 537.00 327.78 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 303.76 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 278.74 Td (```bash helm repo update ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 253.71 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 228.91 Td (refreshes metadata for all added repositories) Tj ET
+0.880 0.600 0.200 rg 64.00 232.91 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 210.11 Td (should be run before searching or installing if you want recent chart) Tj ET
+0.880 0.600 0.200 rg 64.00 214.11 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 193.31 Td (information) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 159.31 Td (16. Update a Specific Repository) Tj ET
+0.880 0.600 0.200 rg 44.00 157.31 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 154.31 m 537.00 154.31 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 130.29 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 105.26 Td (```bash helm repo update acko ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 80.24 Td (Use:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 19 of 24) Tj ET
+endstream
+endobj
+42 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 41 0 R >>
+endobj
+43 0 obj
+<< /Length 3705 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (refreshes only the `acko` repository) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 736.40 Td (convenient when you want a faster targeted update) Tj ET
+0.880 0.600 0.200 rg 64.00 740.40 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 702.40 Td (17. Search Charts in Added Repositories) Tj ET
+0.880 0.600 0.200 rg 44.00 700.40 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 697.40 m 537.00 697.40 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 673.38 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 648.35 Td (```bash helm search repo acko ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 623.33 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 598.53 Td (searches only the repositories already added to your local Helm configuration) Tj ET
+0.880 0.600 0.200 rg 64.00 602.53 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 564.53 Td (18. Search Charts in the Global Hub) Tj ET
+0.880 0.600 0.200 rg 44.00 562.53 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 559.53 m 537.00 559.53 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 535.50 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 510.48 Td (```bash helm search hub nginx ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 485.46 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 460.66 Td (searches public charts through Artifact Hub or a compatible hub endpoint) Tj ET
+0.880 0.600 0.200 rg 64.00 464.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 441.86 Td (useful when you have not added a repository locally yet) Tj ET
+0.880 0.600 0.200 rg 64.00 445.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 422.83 Td (Comparison:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 397.81 Td (| Command | Scope | |---|---| | `helm search repo` | Searches locally added) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 380.78 Td (repositories | | `helm search hub` | Searches public/global chart listings |) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 340.78 Td (19. Remove a Repository) Tj ET
+0.880 0.600 0.200 rg 44.00 338.78 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 335.78 m 537.00 335.78 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 311.76 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 286.74 Td (```bash helm repo remove bitnami ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 261.71 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 236.91 Td (removes the repository from the local Helm client configuration) Tj ET
+0.880 0.600 0.200 rg 64.00 240.91 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 202.91 Td (20. Install a Chart Using a Values File) Tj ET
+0.880 0.600 0.200 rg 44.00 200.91 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 197.91 m 537.00 197.91 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 173.89 Td (Command:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 148.86 Td (```bash helm install my-nginx bitnami/nginx -f values.yaml ```) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 123.84 Td (Use:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 99.04 Td (installs the `bitnami/nginx` chart) Tj ET
+0.880 0.600 0.200 rg 64.00 103.04 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 80.24 Td (applies custom values from `values.yaml`) Tj ET
+0.880 0.600 0.200 rg 64.00 84.24 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 20 of 24) Tj ET
+endstream
+endobj
+44 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 43 0 R >>
+endobj
+45 0 obj
+<< /Length 4257 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (This is a very common pattern when deploying vendor charts because teams rarely use) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 737.95 Td (the default values exactly as they come.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 697.95 Td (Debugging and Safe Preview) Tj ET
+0.880 0.600 0.200 rg 44.00 695.95 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 692.95 m 537.00 692.95 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 668.93 Td (One practical lesson is that Helm should be debugged before it touches the cluster) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 651.90 Td (whenever possible.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 626.88 Td (Important commands for this are:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 602.08 Td (`helm lint` to catch obvious chart problems) Tj ET
+0.880 0.600 0.200 rg 64.00 606.08 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 583.28 Td (`helm template` to inspect rendered YAML locally) Tj ET
+0.880 0.600 0.200 rg 64.00 587.28 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 564.48 Td (`helm install --dry-run --debug` or `helm upgrade --dry-run --debug` to preview) Tj ET
+0.880 0.600 0.200 rg 64.00 568.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 547.68 Td (what Helm is about to do) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 528.66 Td (These commands are important externally because they reduce failed deployments.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 511.63 Td (Internally, they let you inspect the result of values merging and template rendering) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 494.61 Td (before the Kubernetes API sees anything.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 454.61 Td (Practical Chart Creation Flow) Tj ET
+0.880 0.600 0.200 rg 44.00 452.61 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 449.61 m 537.00 449.61 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 425.58 Td (A common application workflow is to containerize an application and then deploy it) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 408.56 Td (with Helm. That practical flow is valuable because it shows Helm in context rather) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 391.54 Td (than isolation.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 366.51 Td (The real-world sequence is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 341.71 Td (1. create or package the application) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 322.91 Td (2. build and push the container image) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 304.11 Td (3. scaffold a Helm chart) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 285.31 Td (4. connect values such as image name, tag, port, and service settings) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 266.51 Td (5. install the chart) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 247.71 Td (6. verify the release after deployment) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 228.69 Td (This teaches an important point:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 203.89 Td (Helm usually sits after application build and image creation) Tj ET
+0.880 0.600 0.200 rg 64.00 207.89 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 185.09 Td (Helm is the packaging and deployment layer for the Kubernetes side of the) Tj ET
+0.880 0.600 0.200 rg 64.00 189.09 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 168.29 Td (workflow) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 134.29 Td (Helmfile in the Helm Ecosystem) Tj ET
+0.880 0.600 0.200 rg 44.00 132.29 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 129.29 m 537.00 129.29 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 105.26 Td (It is also useful to keep the boundary clear between Helm and Helmfile:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 80.46 Td (Helm is the chart and release manager) Tj ET
+0.880 0.600 0.200 rg 64.00 84.46 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 21 of 24) Tj ET
+endstream
+endobj
+46 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 45 0 R >>
+endobj
+47 0 obj
+<< /Length 4575 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (Helmfile is an additional wrapper used to manage multiple Helm releases) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 738.40 Td (declaratively) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 719.38 Td (Why teams use Helmfile:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 694.58 Td (to manage several Helm releases in one place) Tj ET
+0.880 0.600 0.200 rg 64.00 698.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 675.78 Td (to separate environments more cleanly) Tj ET
+0.880 0.600 0.200 rg 64.00 679.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 656.98 Td (to keep large Kubernetes application stacks organized) Tj ET
+0.880 0.600 0.200 rg 64.00 660.98 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 638.18 Td (to coordinate multi-chart deployments with one declarative file) Tj ET
+0.880 0.600 0.200 rg 64.00 642.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 619.15 Td (So Helmfile is not part of Helm's internal mechanism, but it is part of the external) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 602.13 Td (ecosystem many teams use around Helm.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 562.13 Td (Chart Repositories in Practice) Tj ET
+0.880 0.600 0.200 rg 44.00 560.13 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 557.13 m 537.00 557.13 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 533.10 Td (Chart repositories are important because charts need distribution as well as) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 516.08 Td (creation.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 491.06 Td (From a practical point of view:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 466.26 Td (a chart repository stores packaged charts and an `index.yaml`) Tj ET
+0.880 0.600 0.200 rg 64.00 470.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 447.46 Td (teams add repositories with commands such as `helm repo add`) Tj ET
+0.880 0.600 0.200 rg 64.00 451.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 428.66 Td (they refresh repository metadata with `helm repo update`) Tj ET
+0.880 0.600 0.200 rg 64.00 432.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 409.86 Td (they search charts using repository-aware commands) Tj ET
+0.880 0.600 0.200 rg 64.00 413.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 390.83 Td (This matters externally because chart repositories are how teams share and reuse) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 373.81 Td (deployment packages across projects and environments.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 348.78 Td (Today, teams may also use OCI registries for chart distribution, but the repository) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 331.76 Td (model remains an important Helm concept.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 291.76 Td (Hooks and Tests) Tj ET
+0.880 0.600 0.200 rg 44.00 289.76 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 286.76 m 537.00 286.76 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 262.74 Td (Hooks and tests are important advanced topics.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 229.86 Td (Hooks) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 204.84 Td (Hooks let chart developers run resources at specific points in the release lifecycle.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 187.81 Td (Common examples include:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 163.01 Td (pre-install logic) Tj ET
+0.880 0.600 0.200 rg 64.00 167.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 144.21 Td (post-install logic) Tj ET
+0.880 0.600 0.200 rg 64.00 148.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 125.41 Td (pre-upgrade backup jobs) Tj ET
+0.880 0.600 0.200 rg 64.00 129.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 106.61 Td (post-upgrade verification jobs) Tj ET
+0.880 0.600 0.200 rg 64.00 110.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 87.81 Td (pre-delete cleanup work) Tj ET
+0.880 0.600 0.200 rg 64.00 91.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 68.79 Td (Hooks are implemented using annotations such as `helm.sh/hook` in resource metadata.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 22 of 24) Tj ET
+endstream
+endobj
+48 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 47 0 R >>
+endobj
+49 0 obj
+<< /Length 4424 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (They are useful when normal templated resources are not enough and the release needs) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 737.95 Td (lifecycle-aware actions.) Tj ET
+0.120 0.410 0.390 rg BT /F2 13.50 Tf 58.00 705.08 Td (Tests) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 680.05 Td (Helm tests are chart-defined validation resources, often Jobs or Pods, that run after) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 663.03 Td (installation. They help answer questions such as:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 638.23 Td (did the service start correctly) Tj ET
+0.880 0.600 0.200 rg 64.00 642.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 619.43 Td (can the app be reached on the expected port) Tj ET
+0.880 0.600 0.200 rg 64.00 623.43 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 600.63 Td (were values injected correctly) Tj ET
+0.880 0.600 0.200 rg 64.00 604.63 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 581.61 Td (The practical command is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 556.81 Td (`helm test <release-name>`) Tj ET
+0.880 0.600 0.200 rg 64.00 560.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 537.78 Td (This matters because successful installation does not always mean the deployed) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 520.76 Td (application is healthy. Helm tests provide a lightweight verification layer after the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 503.73 Td (release is created.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 478.71 Td (These commands expose the external surface of Helm, while the templating and release) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 461.69 Td (tracking happen internally.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 421.69 Td (Typical End-to-End Example) Tj ET
+0.880 0.600 0.200 rg 44.00 419.69 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 416.69 m 537.00 416.69 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 392.66 Td (A practical Helm workflow might look like this:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 367.86 Td (1. A team creates a chart for a web application.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 349.06 Td (2. The chart contains templates for Deployment, Service, ConfigMap, and Ingress.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 330.26 Td (3. `values.yaml` defines a default image, replica count, and service port.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 311.46 Td (4. The production team provides a separate values file with higher replicas and a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 294.66 Td (production domain.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 275.86 Td (5. Helm merges the values and renders the final manifests.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 257.06 Td (6. Helm sends them to the Kubernetes API server.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 238.26 Td (7. Kubernetes creates or updates the resources.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 219.46 Td (8. Helm records the release revision so the team can upgrade or roll back later.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 200.44 Td (This example shows the two layers clearly:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 175.64 Td (internal layer: merge values, render templates, track release) Tj ET
+0.880 0.600 0.200 rg 64.00 179.64 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 156.84 Td (external layer: talk to Kubernetes, support operations, fit into CI/CD) Tj ET
+0.880 0.600 0.200 rg 64.00 160.84 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 122.84 Td (Strengths) Tj ET
+0.880 0.600 0.200 rg 44.00 120.84 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 117.84 m 537.00 117.84 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 94.04 Td (simplifies Kubernetes application packaging) Tj ET
+0.880 0.600 0.200 rg 64.00 98.04 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 75.24 Td (reduces repeated YAML across environments) Tj ET
+0.880 0.600 0.200 rg 64.00 79.24 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 23 of 24) Tj ET
+endstream
+endobj
+50 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 49 0 R >>
+endobj
+51 0 obj
+<< /Length 3757 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (supports reusable templates and helper functions) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 736.40 Td (provides structured upgrade and rollback flow) Tj ET
+0.880 0.600 0.200 rg 64.00 740.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 717.60 Td (works well in CI/CD and GitOps environments) Tj ET
+0.880 0.600 0.200 rg 64.00 721.60 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 683.60 Td (Limitations) Tj ET
+0.880 0.600 0.200 rg 44.00 681.60 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 678.60 m 537.00 678.60 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 654.80 Td (complex templates can become hard to read and debug) Tj ET
+0.880 0.600 0.200 rg 64.00 658.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 636.00 Td (bad values design can make charts difficult to maintain) Tj ET
+0.880 0.600 0.200 rg 64.00 640.00 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 617.20 Td (Helm does not remove the need to understand Kubernetes itself) Tj ET
+0.880 0.600 0.200 rg 64.00 621.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 598.40 Td (runtime failures can still happen even if the chart renders successfully) Tj ET
+0.880 0.600 0.200 rg 64.00 602.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 579.38 Td (A useful mental model is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 554.58 Td (Helm helps manage Kubernetes resources) Tj ET
+0.880 0.600 0.200 rg 64.00 558.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 535.78 Td (Helm does not replace Kubernetes behavior, scheduling, or cluster security) Tj ET
+0.880 0.600 0.200 rg 64.00 539.78 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 501.78 Td (Internal vs External Working Mechanism in One View) Tj ET
+0.880 0.600 0.200 rg 44.00 499.78 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 496.78 m 537.00 496.78 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 472.75 Td (Internally, Helm loads chart metadata, merges values, renders templates, resolves) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 455.73 Td (dependencies, and stores release state. Externally, it interacts with Kubernetes) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 438.70 Td (clusters, chart repositories, CI/CD systems, and GitOps workflows so applications can) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 421.68 Td (be deployed and managed consistently across environments.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 396.66 Td (In short:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 371.86 Td (internal mechanism explains how Helm transforms charts into manifests and) Tj ET
+0.880 0.600 0.200 rg 64.00 375.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 355.06 Td (tracks releases) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 336.26 Td (external mechanism explains how Helm is used by developers, pipelines, and) Tj ET
+0.880 0.600 0.200 rg 64.00 340.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 319.46 Td (clusters in real operations) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 300.43 Td (That is the key architectural idea behind Helm. Inside, it is a templating and) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 283.41 Td (release-management engine. Outside, it is a practical deployment tool for Kubernetes) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 266.38 Td (platforms.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (Helm: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 24 of 24) Tj ET
+endstream
+endobj
+52 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 51 0 R >>
+endobj
+53 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+54 0 obj
+<< /Title (Helm: Detailed Study Notes) /Author (Codex) /Producer (Codex PDF Renderer) >>
+endobj
+xref
+0 55
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000000238 00000 n 
+0000000456 00000 n 
+0000004516 00000 n 
+0000004662 00000 n 
+0000009330 00000 n 
+0000009476 00000 n 
+0000014097 00000 n 
+0000014244 00000 n 
+0000018964 00000 n 
+0000019112 00000 n 
+0000023513 00000 n 
+0000023661 00000 n 
+0000027810 00000 n 
+0000027958 00000 n 
+0000032392 00000 n 
+0000032540 00000 n 
+0000037597 00000 n 
+0000037745 00000 n 
+0000041777 00000 n 
+0000041925 00000 n 
+0000046235 00000 n 
+0000046383 00000 n 
+0000050325 00000 n 
+0000050473 00000 n 
+0000054447 00000 n 
+0000054595 00000 n 
+0000058346 00000 n 
+0000058494 00000 n 
+0000062326 00000 n 
+0000062474 00000 n 
+0000066562 00000 n 
+0000066710 00000 n 
+0000070750 00000 n 
+0000070898 00000 n 
+0000074674 00000 n 
+0000074822 00000 n 
+0000078717 00000 n 
+0000078865 00000 n 
+0000082467 00000 n 
+0000082615 00000 n 
+0000086373 00000 n 
+0000086521 00000 n 
+0000090831 00000 n 
+0000090979 00000 n 
+0000095607 00000 n 
+0000095755 00000 n 
+0000100232 00000 n 
+0000100380 00000 n 
+0000104190 00000 n 
+0000104338 00000 n 
+0000104388 00000 n 
+trailer
+<< /Size 55 /Root 53 0 R /Info 54 0 R >>
+startxref
+104493
+%%EOF

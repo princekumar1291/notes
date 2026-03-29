@@ -1,0 +1,845 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+4 0 obj
+<< /Type /Pages /Count 13 /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R] >>
+endobj
+5 0 obj
+<< /Length 3959 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.100 0.330 0.350 rg 0.00 674.00 595.00 168.00 re f
+1.000 1.000 1.000 rg BT /F2 30.00 Tf 58.00 750.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 616.00 Td (What SonarQube Is) Tj ET
+0.880 0.600 0.200 rg 44.00 614.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 611.00 m 537.00 611.00 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 586.98 Td (SonarQube is a static code quality and security analysis platform. It examines source) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 569.95 Td (code without running the application and tries to answer several questions at the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 552.93 Td (same time:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 528.13 Td (Does the code contain bugs that can cause failures?) Tj ET
+0.880 0.600 0.200 rg 64.00 532.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 509.33 Td (Does the code contain security weaknesses or insecure coding patterns?) Tj ET
+0.880 0.600 0.200 rg 64.00 513.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 490.53 Td (Is the code difficult to maintain because of duplication, complexity, or code) Tj ET
+0.880 0.600 0.200 rg 64.00 494.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 473.73 Td (smells?) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 454.93 Td (Does the change meet the organization's quality gate before it is merged or) Tj ET
+0.880 0.600 0.200 rg 64.00 458.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 438.13 Td (released?) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 419.10 Td (The key idea is that SonarQube is not only a scanner. It is an analysis ecosystem) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 402.08 Td (with two major parts:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 377.28 Td (a scanner side that reads and analyzes code) Tj ET
+0.880 0.600 0.200 rg 64.00 381.28 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 358.48 Td (a server side that stores results, applies governance rules, and shows) Tj ET
+0.880 0.600 0.200 rg 64.00 362.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 341.68 Td (dashboards) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 322.66 Td (This split is important for understanding both the internal and external working) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 305.63 Td (mechanism.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 265.63 Td (High-Level Workflow) Tj ET
+0.880 0.600 0.200 rg 44.00 263.63 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 260.63 m 537.00 260.63 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 236.61 Td (At a high level, SonarQube works in the following sequence:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 211.81 Td (1. A developer or CI pipeline launches a SonarQube scan.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 193.01 Td (2. The scanner reads project settings, language files, exclusions, and) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 176.21 Td (authentication details.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 157.41 Td (3. Language-specific analyzers parse the code and build internal models such as) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 140.61 Td (tokens, syntax trees, and semantic relationships.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 121.81 Td (4. Rules run on top of those models to detect bugs, vulnerabilities, security) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 105.01 Td (hotspots, duplications, and maintainability issues.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 86.21 Td (5. Metrics such as coverage, complexity, and file-level measures are assembled.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 1 of 13) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4893 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 755.20 Td (6. The scanner uploads the analysis report to the SonarQube server.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 736.40 Td (7. The server processes the report, stores issues and measures, evaluates the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 719.60 Td (quality gate, and publishes dashboards or pull request feedback.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 685.60 Td (Internal Working Mechanism) Tj ET
+0.880 0.600 0.200 rg 44.00 683.60 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 680.60 m 537.00 680.60 l S
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 641.60 Td (1. Scanner Bootstrap and Project Context) Tj ET
+0.880 0.600 0.200 rg 44.00 639.60 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 636.60 m 537.00 636.60 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 612.58 Td (The internal process starts when the scanner is invoked from a tool such as) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 595.55 Td (`sonar-scanner`, Maven, Gradle, or a CI job. The scanner first builds project) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 578.53 Td (context:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 553.73 Td (project key and branch or pull request metadata) Tj ET
+0.880 0.600 0.200 rg 64.00 557.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 534.93 Td (source directories and test directories) Tj ET
+0.880 0.600 0.200 rg 64.00 538.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 516.13 Td (language detection from file extensions and build metadata) Tj ET
+0.880 0.600 0.200 rg 64.00 520.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 497.33 Td (exclusion and inclusion patterns) Tj ET
+0.880 0.600 0.200 rg 64.00 501.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 478.53 Td (credentials used to communicate with the SonarQube server) Tj ET
+0.880 0.600 0.200 rg 64.00 482.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 459.50 Td (This stage matters because SonarQube is highly configuration-driven. A wrong project) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 442.48 Td (key, a missing source path, or an incorrect exclusion pattern can make the analysis) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 425.46 Td (incomplete even when the scanner itself runs successfully.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 385.46 Td (2. File Indexing and Language Analyzer Selection) Tj ET
+0.880 0.600 0.200 rg 44.00 383.46 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 380.46 m 537.00 380.46 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 356.43 Td (After configuration is loaded, the scanner indexes files and decides which analyzers) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 339.41 Td (to activate. SonarQube does not use one generic parser for every language. Instead,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 322.38 Td (each supported language has its own analyzer plugin or engine behavior.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 297.36 Td (Examples of what happens here:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 272.56 Td (Java files are routed to the Java analyzer.) Tj ET
+0.880 0.600 0.200 rg 64.00 276.56 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 253.76 Td (JavaScript or TypeScript files are routed to the JS or TS analyzer.) Tj ET
+0.880 0.600 0.200 rg 64.00 257.76 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 234.96 Td (Python files are routed to the Python analyzer.) Tj ET
+0.880 0.600 0.200 rg 64.00 238.96 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 216.16 Td (Test files may be treated differently from production code.) Tj ET
+0.880 0.600 0.200 rg 64.00 220.16 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 197.14 Td (Internally, SonarQube separates the file inventory from the actual rule execution.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 180.11 Td (That allows it to calculate measures per file, per directory, and per project in a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 163.09 Td (structured way.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 123.09 Td (3. Parsing, AST Construction, and Semantic Modeling) Tj ET
+0.880 0.600 0.200 rg 44.00 121.09 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 118.09 m 537.00 118.09 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 94.06 Td (For each supported language, SonarQube creates internal representations of the code.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 77.04 Td (The most common structure is an abstract syntax tree, often called an AST. This is a) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 2 of 13) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 4860 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 754.98 Td (tree form of the code that preserves syntax structure without keeping every character) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 737.95 Td (of the original source exactly as written.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 712.93 Td (Why this matters:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 688.13 Td (Rules can reason about code structure instead of plain text.) Tj ET
+0.880 0.600 0.200 rg 64.00 692.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 669.33 Td (The analyzer can identify classes, methods, loops, expressions, imports, and) Tj ET
+0.880 0.600 0.200 rg 64.00 673.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 652.53 Td (declarations.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 633.73 Td (Semantic information can be added, such as variable type, symbol usage, call) Tj ET
+0.880 0.600 0.200 rg 64.00 637.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 616.93 Td (sites, inheritance, and control flow.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 597.90 Td (Simple text matching would only catch obvious patterns. AST and semantic models let) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 580.88 Td (SonarQube detect deeper problems such as:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 556.08 Td (unreachable code) Tj ET
+0.880 0.600 0.200 rg 64.00 560.08 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 537.28 Td (suspicious null handling) Tj ET
+0.880 0.600 0.200 rg 64.00 541.28 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 518.48 Td (insecure API usage) Tj ET
+0.880 0.600 0.200 rg 64.00 522.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 499.68 Td (complex nested conditionals) Tj ET
+0.880 0.600 0.200 rg 64.00 503.68 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 480.88 Td (improper exception handling) Tj ET
+0.880 0.600 0.200 rg 64.00 484.88 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 461.86 Td (In some languages and rule families, SonarQube also performs deeper data-flow or) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 444.83 Td (symbolic analysis. That is especially useful in security analysis, where the scanner) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 427.81 Td (may trace whether untrusted input can flow into sensitive operations.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 387.81 Td (4. Rule Engine Execution) Tj ET
+0.880 0.600 0.200 rg 44.00 385.81 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 382.81 m 537.00 382.81 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 358.78 Td (Once the internal code model exists, SonarQube runs rules. A rule is a condition that) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 341.76 Td (checks whether the code violates a known best practice, bug pattern, or security) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 324.74 Td (policy.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 299.71 Td (Rules are grouped into quality profiles. A quality profile decides:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 274.91 Td (which rules are active) Tj ET
+0.880 0.600 0.200 rg 64.00 278.91 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 256.11 Td (which severity is assigned) Tj ET
+0.880 0.600 0.200 rg 64.00 260.11 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 237.31 Td (which projects or languages use that rule set) Tj ET
+0.880 0.600 0.200 rg 64.00 241.31 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 218.29 Td (Internally, the analyzer walks through the code model and executes rule logic.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 201.26 Td (Depending on the rule, it may:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 176.46 Td (inspect single statements) Tj ET
+0.880 0.600 0.200 rg 64.00 180.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 157.66 Td (compare related symbols across multiple lines) Tj ET
+0.880 0.600 0.200 rg 64.00 161.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 138.86 Td (follow data flow between methods) Tj ET
+0.880 0.600 0.200 rg 64.00 142.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 120.06 Td (measure complexity or nesting depth) Tj ET
+0.880 0.600 0.200 rg 64.00 124.06 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 101.26 Td (compare token streams for code duplication) Tj ET
+0.880 0.600 0.200 rg 64.00 105.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 82.24 Td (If a rule matches, SonarQube creates an issue record with details such as:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 3 of 13) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 4732 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (file and line location) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 736.40 Td (rule key) Tj ET
+0.880 0.600 0.200 rg 64.00 740.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 717.60 Td (severity) Tj ET
+0.880 0.600 0.200 rg 64.00 721.60 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 698.80 Td (explanation) Tj ET
+0.880 0.600 0.200 rg 64.00 702.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 680.00 Td (remediation guidance) Tj ET
+0.880 0.600 0.200 rg 64.00 684.00 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 660.98 Td (This is the core detection engine. Everything the user sees in the UI starts here.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 620.98 Td (5. Metrics, Measures, and Duplication Detection) Tj ET
+0.880 0.600 0.200 rg 44.00 618.98 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 615.98 m 537.00 615.98 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 591.95 Td (SonarQube does not only create issues. It also calculates aggregate measures that) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 574.93 Td (help teams judge code health over time.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 549.90 Td (Common measures include:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 525.10 Td (lines of code) Tj ET
+0.880 0.600 0.200 rg 64.00 529.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 506.30 Td (cyclomatic or cognitive complexity) Tj ET
+0.880 0.600 0.200 rg 64.00 510.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 487.50 Td (duplicated lines and duplicated blocks) Tj ET
+0.880 0.600 0.200 rg 64.00 491.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 468.70 Td (unit test coverage imported from test tools) Tj ET
+0.880 0.600 0.200 rg 64.00 472.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 449.90 Td (number of bugs, vulnerabilities, and code smells) Tj ET
+0.880 0.600 0.200 rg 64.00 453.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 430.88 Td (Duplication detection is usually token-based rather than text-only. The scanner) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 413.86 Td (normalizes code into comparable units and searches for repeated structures. That) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 396.83 Td (allows it to catch copy-paste logic even when some formatting differs.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 371.81 Td (These measures are important because SonarQube combines rule findings with trend) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 354.78 Td (metrics. A project may have only a few high-severity bugs but still fail a quality) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 337.76 Td (gate due to low coverage or high duplication on new code.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 297.76 Td (6. Report Packaging and Upload) Tj ET
+0.880 0.600 0.200 rg 44.00 295.76 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 292.76 m 537.00 292.76 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 268.74 Td (After local analysis finishes, the scanner builds a report package and sends it to) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 251.71 Td (the SonarQube server. This package does not contain just raw text findings. It) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 234.69 Td (contains structured analysis results, metadata, file references, and measures that) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 217.66 Td (the server can process asynchronously.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 192.64 Td (This design has two advantages:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 167.84 Td (the expensive language analysis stays close to the code and build environment) Tj ET
+0.880 0.600 0.200 rg 64.00 171.84 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 149.04 Td (the centralized server can focus on persistence, dashboards, governance, and) Tj ET
+0.880 0.600 0.200 rg 64.00 153.04 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 132.24 Td (collaboration) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 98.24 Td (7. Server-Side Processing) Tj ET
+0.880 0.600 0.200 rg 44.00 96.24 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 93.24 m 537.00 93.24 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 69.22 Td (On the server side, SonarQube has multiple logical responsibilities:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 4 of 13) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 4870 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 747.20 Td (receive uploaded reports) Tj ET
+0.880 0.600 0.200 rg 64.00 751.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 728.40 Td (process them through background tasks) Tj ET
+0.880 0.600 0.200 rg 64.00 732.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 709.60 Td (store issues, measures, and project history) Tj ET
+0.880 0.600 0.200 rg 64.00 713.60 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 690.80 Td (power dashboards, queries, filters, and trend views) Tj ET
+0.880 0.600 0.200 rg 64.00 694.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 672.00 Td (evaluate quality gates and branch status) Tj ET
+0.880 0.600 0.200 rg 64.00 676.00 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 652.98 Td (Conceptually, the server behaves like a control plane. It does not just save scan) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 635.95 Td (output. It enriches and organizes it.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 610.93 Td (Typical internal server responsibilities include:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 586.13 Td (associating the report with the correct project and branch) Tj ET
+0.880 0.600 0.200 rg 64.00 590.13 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 567.33 Td (comparing the new analysis against previous snapshots) Tj ET
+0.880 0.600 0.200 rg 64.00 571.33 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 548.53 Td (identifying what counts as new code versus old code) Tj ET
+0.880 0.600 0.200 rg 64.00 552.53 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 529.73 Td (applying quality gate conditions) Tj ET
+0.880 0.600 0.200 rg 64.00 533.73 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 510.93 Td (tracking issue lifecycle states such as open, confirmed, resolved, or false) Tj ET
+0.880 0.600 0.200 rg 64.00 514.93 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 494.13 Td (positive) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 475.10 Td (This historical comparison is one of SonarQube's strongest design choices. Many teams) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 458.08 Td (care less about total legacy issues and more about preventing new problems from) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 441.06 Td (entering the codebase.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 401.06 Td (8. Quality Gates and Issue Lifecycle) Tj ET
+0.880 0.600 0.200 rg 44.00 399.06 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 396.06 m 537.00 396.06 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 372.03 Td (The quality gate is the internal policy decision layer. A gate can use conditions) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 355.01 Td (such as:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 330.21 Td (no new blocker issues) Tj ET
+0.880 0.600 0.200 rg 64.00 334.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 311.41 Td (no new vulnerabilities above a threshold) Tj ET
+0.880 0.600 0.200 rg 64.00 315.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 292.61 Td (coverage on new code above a minimum) Tj ET
+0.880 0.600 0.200 rg 64.00 296.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 273.81 Td (duplication on new code below a limit) Tj ET
+0.880 0.600 0.200 rg 64.00 277.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 254.78 Td (If the conditions are not met, the project or pull request fails the gate. This turns) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 237.76 Td (analysis into an actionable control rather than a passive report.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 212.74 Td (Issue lifecycle management is also internal logic. SonarQube stores whether an issue) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 195.71 Td (is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 170.91 Td (new or existing) Tj ET
+0.880 0.600 0.200 rg 64.00 174.91 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 152.11 Td (accepted as a false positive) Tj ET
+0.880 0.600 0.200 rg 64.00 156.11 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 133.31 Td (marked as won't fix) Tj ET
+0.880 0.600 0.200 rg 64.00 137.31 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 114.51 Td (resolved because the code changed) Tj ET
+0.880 0.600 0.200 rg 64.00 118.51 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 95.49 Td (That lifecycle prevents the same findings from being treated as fresh noise on every) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 78.46 Td (scan.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 5 of 13) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 4481 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 740.00 Td (External Working Mechanism) Tj ET
+0.880 0.600 0.200 rg 44.00 738.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 735.00 m 537.00 735.00 l S
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 696.00 Td (1. How Developers and CI Systems Trigger It) Tj ET
+0.880 0.600 0.200 rg 44.00 694.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 691.00 m 537.00 691.00 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 666.98 Td (Externally, SonarQube is usually activated by:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 642.18 Td (a local developer run before pushing code) Tj ET
+0.880 0.600 0.200 rg 64.00 646.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 623.38 Td (a build pipeline in Jenkins, GitHub Actions, GitLab CI, Azure DevOps, or) Tj ET
+0.880 0.600 0.200 rg 64.00 627.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 606.58 Td (similar systems) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 587.78 Td (branch or pull request analysis during code review) Tj ET
+0.880 0.600 0.200 rg 64.00 591.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 568.75 Td (From the outside, the workflow looks simple:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 543.95 Td (build the project) Tj ET
+0.880 0.600 0.200 rg 64.00 547.95 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 525.15 Td (run tests and collect coverage) Tj ET
+0.880 0.600 0.200 rg 64.00 529.15 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 506.35 Td (execute the SonarQube scanner) Tj ET
+0.880 0.600 0.200 rg 64.00 510.35 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 487.55 Td (wait for the quality gate result) Tj ET
+0.880 0.600 0.200 rg 64.00 491.55 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 468.53 Td (The external mechanism is therefore integration-centric. SonarQube fits into the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 451.50 Td (delivery pipeline rather than replacing it.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 411.50 Td (2. Interaction with Source Control) Tj ET
+0.880 0.600 0.200 rg 44.00 409.50 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 406.50 m 537.00 406.50 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 382.48 Td (SonarQube uses source control metadata to improve relevance. It can compare current) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 365.46 Td (changes with the baseline branch and focus heavily on new code. That allows teams to) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 348.43 Td (adopt SonarQube even in legacy projects because they can enforce strict rules on) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 331.41 Td (newly written code first.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 306.38 Td (External interactions with SCM often include:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 281.58 Td (branch names and commit metadata from CI) Tj ET
+0.880 0.600 0.200 rg 64.00 285.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 262.78 Td (pull request identifiers) Tj ET
+0.880 0.600 0.200 rg 64.00 266.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 243.98 Td (blame information for who changed a line) Tj ET
+0.880 0.600 0.200 rg 64.00 247.98 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 225.18 Td (pull request decoration with comments or gate status) Tj ET
+0.880 0.600 0.200 rg 64.00 229.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 206.16 Td (This external feedback loop is one reason SonarQube is effective in team) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 189.14 Td (environments. Results are pushed to the place where developers already work.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 149.14 Td (3. Interaction with Build Tools and Test Tools) Tj ET
+0.880 0.600 0.200 rg 44.00 147.14 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 144.14 m 537.00 144.14 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 120.11 Td (SonarQube does not replace compilers or test frameworks. Instead, it consumes outputs) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 103.09 Td (from them.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 78.06 Td (Examples:) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 6 of 13) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 4595 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (Java coverage may come from JaCoCo.) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 736.40 Td (JavaScript coverage may come from Jest or other test runners.) Tj ET
+0.880 0.600 0.200 rg 64.00 740.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 717.60 Td (Build metadata may come from Maven or Gradle.) Tj ET
+0.880 0.600 0.200 rg 64.00 721.60 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 698.80 Td (Compiled class files may improve analysis in typed languages.) Tj ET
+0.880 0.600 0.200 rg 64.00 702.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 679.78 Td (So externally, SonarQube acts like an analysis layer attached to the normal build) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 662.75 Td (process. It benefits from the ecosystem around the project instead of trying to do) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 645.73 Td (every task itself.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 605.73 Td (4. Dashboards, Governance, and Team Workflow) Tj ET
+0.880 0.600 0.200 rg 44.00 603.73 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 600.73 m 537.00 600.73 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 576.70 Td (Once results reach the server, users interact with SonarQube mainly through the web) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 559.68 Td (UI, project dashboards, issue lists, and gate status checks.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 534.66 Td (External consumers of SonarQube output include:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 509.86 Td (developers fixing issues) Tj ET
+0.880 0.600 0.200 rg 64.00 513.86 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 491.06 Td (reviewers checking pull request quality) Tj ET
+0.880 0.600 0.200 rg 64.00 495.06 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 472.26 Td (tech leads enforcing coding standards) Tj ET
+0.880 0.600 0.200 rg 64.00 476.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 453.46 Td (AppSec teams monitoring security findings) Tj ET
+0.880 0.600 0.200 rg 64.00 457.46 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 434.66 Td (managers watching quality trends over time) Tj ET
+0.880 0.600 0.200 rg 64.00 438.66 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 415.63 Td (This is the external governance mechanism. Internally, the engine finds problems.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 398.61 Td (Externally, the organization decides how those problems affect merge, release, or) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 381.58 Td (compliance decisions.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 341.58 Td (5. IDE and Developer Feedback Loop) Tj ET
+0.880 0.600 0.200 rg 44.00 339.58 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 336.58 m 537.00 336.58 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 312.56 Td (SonarQube often works with IDE tools such as SonarLint. In practice, this creates a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 295.54 Td (two-stage feedback model:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 270.74 Td (local IDE feedback before commit) Tj ET
+0.880 0.600 0.200 rg 64.00 274.74 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 251.94 Td (centralized SonarQube validation in CI after commit) Tj ET
+0.880 0.600 0.200 rg 64.00 255.94 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 232.91 Td (That pairing is important externally because it shortens the feedback loop.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 215.89 Td (Developers see many issues before the code even reaches the main branch.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 175.89 Td (6. Common End-to-End Example) Tj ET
+0.880 0.600 0.200 rg 44.00 173.89 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 170.89 m 537.00 170.89 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 146.86 Td (A practical external flow looks like this:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 122.06 Td (1. A developer pushes a branch.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 103.26 Td (2. Jenkins checks out the code and runs tests.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 84.46 Td (3. Coverage reports are generated.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 7 of 13) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 4553 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 755.20 Td (4. The SonarQube scanner runs with branch or pull request metadata.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 736.40 Td (5. The scanner uploads results to the SonarQube server.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 717.60 Td (6. The server processes the report and evaluates the quality gate.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 698.80 Td (7. Jenkins or the pull request platform receives pass or fail status.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 680.00 Td (8. The developer reviews issues in SonarQube and fixes the code if needed.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 660.98 Td (This example shows the outside view. The user sees a gate result and issue dashboard,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 643.95 Td (while the deeper parsing and rule logic happen inside the analysis engines.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 603.95 Td (Practical Setup and Operating Flow) Tj ET
+0.880 0.600 0.200 rg 44.00 601.95 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 598.95 m 537.00 598.95 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 574.93 Td (In day-to-day DevSecOps work, SonarQube is usually learned and operated in a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 557.90 Td (practical sequence:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 533.10 Td (1. start a SonarQube server) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 514.30 Td (2. open the web UI and create or select a project) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 495.50 Td (3. generate a token for analysis) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 476.70 Td (4. configure scanner properties) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 457.90 Td (5. run analysis locally or from CI) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 439.10 Td (6. review the dashboard and quality gate) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 420.30 Td (7. wire the result into Jenkins or another pipeline) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 401.28 Td (This section focuses on that operational flow.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 361.28 Td (1. Basic Instance Setup Pattern) Tj ET
+0.880 0.600 0.200 rg 44.00 359.28 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 356.28 m 537.00 356.28 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 332.26 Td (For a simple lab environment, teams often start with a single SonarQube instance and) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 315.23 Td (access it on port `9000`. In more serious environments, SonarQube is treated as a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 298.21 Td (proper service with:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 273.41 Td (persistent storage) Tj ET
+0.880 0.600 0.200 rg 64.00 277.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 254.61 Td (a supported external database) Tj ET
+0.880 0.600 0.200 rg 64.00 258.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 235.81 Td (reverse proxy or HTTPS configuration) Tj ET
+0.880 0.600 0.200 rg 64.00 239.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 217.01 Td (CI integration) Tj ET
+0.880 0.600 0.200 rg 64.00 221.01 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 197.98 Td (SonarQube's server-side architecture still follows the same model discussed earlier:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 173.18 Td (web process for the UI) Tj ET
+0.880 0.600 0.200 rg 64.00 177.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 154.38 Td (search process for indexed queries) Tj ET
+0.880 0.600 0.200 rg 64.00 158.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 135.58 Td (compute engine for processing scan reports) Tj ET
+0.880 0.600 0.200 rg 64.00 139.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 116.78 Td (database for issues, metrics, configuration, and queued tasks) Tj ET
+0.880 0.600 0.200 rg 64.00 120.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 97.76 Td (That means installation is only the first step. The real value appears when scanners) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 80.74 Td (and pipelines start sending analysis reports to the server.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 8 of 13) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 19 0 R >>
+endobj
+21 0 obj
+<< /Length 4622 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 740.00 Td (2. First Login and Project Bootstrap) Tj ET
+0.880 0.600 0.200 rg 44.00 738.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 735.00 m 537.00 735.00 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 710.98 Td (After the server is reachable, the usual next steps are:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 686.18 Td (sign in to the SonarQube UI) Tj ET
+0.880 0.600 0.200 rg 64.00 690.18 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 667.38 Td (change default administrative credentials in a fresh setup) Tj ET
+0.880 0.600 0.200 rg 64.00 671.38 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 648.58 Td (create a project manually or let the first scan create it automatically) Tj ET
+0.880 0.600 0.200 rg 64.00 652.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 629.78 Td (generate a token for the scanner) Tj ET
+0.880 0.600 0.200 rg 64.00 633.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 610.75 Td (The token is important because modern scanner usage is centered around token-based) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 593.73 Td (authentication rather than older username and password patterns.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 553.73 Td (3. Core Analysis Parameters) Tj ET
+0.880 0.600 0.200 rg 44.00 551.73 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 548.73 m 537.00 548.73 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 524.70 Td (A SonarQube scan depends on a few high-value parameters. The most important ones are:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 499.90 Td (`sonar.projectKey` to uniquely identify the project) Tj ET
+0.880 0.600 0.200 rg 64.00 503.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 481.10 Td (`sonar.projectName` for display in the UI) Tj ET
+0.880 0.600 0.200 rg 64.00 485.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 462.30 Td (`sonar.sources` for the source directory to analyze) Tj ET
+0.880 0.600 0.200 rg 64.00 466.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 443.50 Td (`sonar.host.url` for the SonarQube server address) Tj ET
+0.880 0.600 0.200 rg 64.00 447.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 424.70 Td (`sonar.token` for authentication) Tj ET
+0.880 0.600 0.200 rg 64.00 428.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 405.68 Td (For many projects, these are placed in a `sonar-project.properties` file or injected) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 388.66 Td (by the build tool or CI system.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 363.63 Td (Simple example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 338.83 Td (`sonar.projectKey=hello-world`) Tj ET
+0.880 0.600 0.200 rg 64.00 342.83 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 320.03 Td (`sonar.projectName=hello-world`) Tj ET
+0.880 0.600 0.200 rg 64.00 324.03 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 301.23 Td (`sonar.sources=src`) Tj ET
+0.880 0.600 0.200 rg 64.00 305.23 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 282.43 Td (`sonar.host.url=http://localhost:9000`) Tj ET
+0.880 0.600 0.200 rg 64.00 286.43 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 263.41 Td (Security note:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 238.61 Td (the token should usually come from an environment variable or CI secret) Tj ET
+0.880 0.600 0.200 rg 64.00 242.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 219.81 Td (it is better not to hardcode tokens in project files) Tj ET
+0.880 0.600 0.200 rg 64.00 223.81 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 185.81 Td (4. Running Analysis with SonarScanner) Tj ET
+0.880 0.600 0.200 rg 44.00 183.81 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 180.81 m 537.00 180.81 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 156.78 Td (When the project is not using a build-tool-specific scanner, teams often use) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 139.76 Td (SonarScanner CLI.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 114.74 Td (Typical flow:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 89.94 Td (1. keep the project in a working directory) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 71.14 Td (2. create `sonar-project.properties`) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 483.00 34.00 Td (Page 9 of 13) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 21 0 R >>
+endobj
+23 0 obj
+<< /Length 4317 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 755.20 Td (3. set `SONAR_TOKEN`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 736.40 Td (4. run the scanner from the project root) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 717.38 Td (Example:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 692.58 Td (`export SONAR_HOST_URL=http://localhost:9000`) Tj ET
+0.880 0.600 0.200 rg 64.00 696.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 673.78 Td (`export SONAR_TOKEN=your_token_here`) Tj ET
+0.880 0.600 0.200 rg 64.00 677.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 654.98 Td (`sonar-scanner`) Tj ET
+0.880 0.600 0.200 rg 64.00 658.98 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 635.95 Td (This sends the analysis report to SonarQube, where the compute engine processes it) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 618.93 Td (and the UI later displays the results.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 578.93 Td (5. Running Analysis with Maven) Tj ET
+0.880 0.600 0.200 rg 44.00 576.93 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 573.93 m 537.00 573.93 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 549.90 Td (For Java and Maven projects, a very common pattern is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 525.10 Td (`mvn clean verify sonar:sonar`) Tj ET
+0.880 0.600 0.200 rg 64.00 529.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 506.08 Td (Why this matters:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 481.28 Td (build and tests run first) Tj ET
+0.880 0.600 0.200 rg 64.00 485.28 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 462.48 Td (compiled classes and test results are available) Tj ET
+0.880 0.600 0.200 rg 64.00 466.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 443.68 Td (SonarQube analysis is attached naturally to the Java build process) Tj ET
+0.880 0.600 0.200 rg 64.00 447.68 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 424.66 Td (This is one of the most common practical integrations for SonarQube in enterprise) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 407.63 Td (Java environments.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 367.63 Td (6. Jenkins Integration) Tj ET
+0.880 0.600 0.200 rg 44.00 365.63 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 362.63 m 537.00 362.63 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 338.61 Td (SonarQube is frequently used with Jenkins. In that setup, Jenkins acts as the) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 321.58 Td (orchestrator while SonarQube acts as the analysis and policy engine.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 296.56 Td (The practical Jenkins flow usually looks like this:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 271.76 Td (1. Jenkins checks out the code) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 252.96 Td (2. Jenkins builds the project) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 234.16 Td (3. Jenkins runs the SonarQube analysis step) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 215.36 Td (4. SonarQube processes the report asynchronously) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 196.56 Td (5. Jenkins waits for the quality gate result) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 66.00 177.76 Td (6. the pipeline continues or fails based on that result) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 158.74 Td (In Jenkins pipeline syntax, the common pattern is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 133.94 Td (analysis stage: `withSonarQubeEnv\('SonarQube'\)` wraps the scan command so) Tj ET
+0.880 0.600 0.200 rg 64.00 137.94 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 117.14 Td (Jenkins injects SonarQube connection details into the job environment) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 98.34 Td (build command inside that stage is commonly `mvn clean verify sonar:sonar` for) Tj ET
+0.880 0.600 0.200 rg 64.00 102.34 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 81.54 Td (Maven projects) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 10 of 13) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 23 0 R >>
+endobj
+25 0 obj
+<< /Length 4665 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (quality gate stage usually uses `timeout\(time: 1, unit: 'HOURS'\)` together with) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 738.40 Td (`waitForQualityGate abortPipeline: true`) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 719.38 Td (Operational note:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 694.58 Td (`waitForQualityGate` depends on a SonarQube webhook being configured to point) Tj ET
+0.880 0.600 0.200 rg 64.00 698.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 677.78 Td (to the Jenkins webhook endpoint) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 658.75 Td (This is a critical practical detail. Without the webhook, the quality gate pause step) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 641.73 Td (is not wired correctly.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 601.73 Td (7. What the SonarQube Report Shows) Tj ET
+0.880 0.600 0.200 rg 44.00 599.73 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 596.73 m 537.00 596.73 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 572.70 Td (After analysis is complete, the dashboard usually draws attention to these areas:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 547.90 Td (bugs) Tj ET
+0.880 0.600 0.200 rg 64.00 551.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 529.10 Td (vulnerabilities) Tj ET
+0.880 0.600 0.200 rg 64.00 533.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 510.30 Td (security hotspots) Tj ET
+0.880 0.600 0.200 rg 64.00 514.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 491.50 Td (code smells) Tj ET
+0.880 0.600 0.200 rg 64.00 495.50 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 472.70 Td (duplicated code) Tj ET
+0.880 0.600 0.200 rg 64.00 476.70 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 453.90 Td (test coverage) Tj ET
+0.880 0.600 0.200 rg 64.00 457.90 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 435.10 Td (complexity) Tj ET
+0.880 0.600 0.200 rg 64.00 439.10 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 416.30 Td (quality gate status) Tj ET
+0.880 0.600 0.200 rg 64.00 420.30 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 397.28 Td (A useful way to read the report is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 372.48 Td (check the quality gate first) Tj ET
+0.880 0.600 0.200 rg 64.00 376.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 353.68 Td (inspect new-code issues before old backlog issues) Tj ET
+0.880 0.600 0.200 rg 64.00 357.68 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 334.88 Td (review high-severity bugs and vulnerabilities next) Tj ET
+0.880 0.600 0.200 rg 64.00 338.88 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 316.08 Td (then review maintainability and technical debt patterns) Tj ET
+0.880 0.600 0.200 rg 64.00 320.08 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 297.06 Td (That sequence keeps the analysis actionable.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 257.06 Td (8. Security Hotspots vs Vulnerabilities) Tj ET
+0.880 0.600 0.200 rg 44.00 255.06 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 252.06 m 537.00 252.06 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 228.03 Td (One practical point that often confuses beginners is the difference between a) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 211.01 Td (vulnerability and a security hotspot.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 186.21 Td (vulnerability usually means SonarQube believes there is a security flaw that) Tj ET
+0.880 0.600 0.200 rg 64.00 190.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 169.41 Td (should be fixed) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 150.61 Td (security hotspot means there is a security-sensitive area that requires human) Tj ET
+0.880 0.600 0.200 rg 64.00 154.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 133.81 Td (review) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 114.78 Td (This distinction matters because not every hotspot is automatically a confirmed) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 97.76 Td (vulnerability. Some of them are review-required decisions around risky APIs or) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 80.74 Td (security-sensitive code paths.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 11 of 13) Tj ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 25 0 R >>
+endobj
+27 0 obj
+<< /Length 4882 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 740.00 Td (9. Quality Gate in Real Delivery Flow) Tj ET
+0.880 0.600 0.200 rg 44.00 738.00 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 735.00 m 537.00 735.00 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 710.98 Td (A quality gate is where SonarQube becomes more than a reporting tool. In practice,) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 693.95 Td (teams often use it to stop merges or deployments if:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 669.15 Td (new critical issues appear) Tj ET
+0.880 0.600 0.200 rg 64.00 673.15 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 650.35 Td (coverage on new code is too low) Tj ET
+0.880 0.600 0.200 rg 64.00 654.35 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 631.55 Td (duplication on new code is too high) Tj ET
+0.880 0.600 0.200 rg 64.00 635.55 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 612.75 Td (new vulnerabilities or blocker issues are present) Tj ET
+0.880 0.600 0.200 rg 64.00 616.75 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 593.73 Td (This means SonarQube is commonly placed before artifact promotion or deployment) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 576.70 Td (approval in CI/CD.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 536.70 Td (10. Common Troubleshooting Areas) Tj ET
+0.880 0.600 0.200 rg 44.00 534.70 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 531.70 m 537.00 531.70 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 507.68 Td (When SonarQube analysis does not behave as expected, the usual causes include:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 482.88 Td (incorrect `sonar.projectKey`) Tj ET
+0.880 0.600 0.200 rg 64.00 486.88 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 464.08 Td (wrong source directory or exclusion settings) Tj ET
+0.880 0.600 0.200 rg 64.00 468.08 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 445.28 Td (missing token or insufficient permissions) Tj ET
+0.880 0.600 0.200 rg 64.00 449.28 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 426.48 Td (Java projects scanned without compiled classes) Tj ET
+0.880 0.600 0.200 rg 64.00 430.48 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 407.68 Td (coverage report paths not imported correctly) Tj ET
+0.880 0.600 0.200 rg 64.00 411.68 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 388.88 Td (Jenkins quality gate step used without webhook configuration) Tj ET
+0.880 0.600 0.200 rg 64.00 392.88 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 370.08 Td (server resource pressure on web, compute engine, or search processes) Tj ET
+0.880 0.600 0.200 rg 64.00 374.08 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 351.06 Td (These issues are operational rather than conceptual, but they matter because they are) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 334.03 Td (what teams encounter most often in real implementations.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 294.03 Td (Practical Mental Model) Tj ET
+0.880 0.600 0.200 rg 44.00 292.03 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 289.03 m 537.00 289.03 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 265.01 Td (If you want one simple operating model, think of SonarQube this way:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 240.21 Td (the scanner collects code facts) Tj ET
+0.880 0.600 0.200 rg 64.00 244.21 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 221.41 Td (the server computes and stores results) Tj ET
+0.880 0.600 0.200 rg 64.00 225.41 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 202.61 Td (the quality gate turns those results into a delivery decision) Tj ET
+0.880 0.600 0.200 rg 64.00 206.61 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 183.81 Td (Jenkins or another CI tool uses that decision to allow or block the pipeline) Tj ET
+0.880 0.600 0.200 rg 64.00 187.81 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 164.78 Td (This practical model connects the internal mechanism to the external workflow.) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 124.78 Td (Strengths) Tj ET
+0.880 0.600 0.200 rg 44.00 122.78 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 119.78 m 537.00 119.78 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 95.98 Td (strong static analysis for code quality and secure coding issues) Tj ET
+0.880 0.600 0.200 rg 64.00 99.98 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 77.18 Td (centralized dashboards and historical trends) Tj ET
+0.880 0.600 0.200 rg 64.00 81.18 6.00 6.00 re f
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 12 of 13) Tj ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 27 0 R >>
+endobj
+29 0 obj
+<< /Length 3802 >>
+stream
+0.950 0.970 0.980 rg 0 0 595.00 842.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 755.20 Td (quality gates make policy enforceable) Tj ET
+0.880 0.600 0.200 rg 64.00 759.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 736.40 Td (good fit for pull request review and CI/CD) Tj ET
+0.880 0.600 0.200 rg 64.00 740.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 717.60 Td (broad language support through analyzers and plugins) Tj ET
+0.880 0.600 0.200 rg 64.00 721.60 6.00 6.00 re f
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 683.60 Td (Limitations) Tj ET
+0.880 0.600 0.200 rg 44.00 681.60 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 678.60 m 537.00 678.60 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 654.80 Td (it is not a runtime security tool) Tj ET
+0.880 0.600 0.200 rg 64.00 658.80 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 636.00 Td (static analysis can produce false positives or miss context-dependent defects) Tj ET
+0.880 0.600 0.200 rg 64.00 640.00 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 617.20 Td (quality depends on correct configuration and quality profiles) Tj ET
+0.880 0.600 0.200 rg 64.00 621.20 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 598.40 Td (it is different from dependency vulnerability scanning and container scanning) Tj ET
+0.880 0.600 0.200 rg 64.00 602.40 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 579.38 Td (A useful mental model is:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 554.58 Td (SonarQube is best at analyzing how your code is written) Tj ET
+0.880 0.600 0.200 rg 64.00 558.58 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 535.78 Td (it is not the main tool for checking whether a third-party library or container) Tj ET
+0.880 0.600 0.200 rg 64.00 539.78 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 518.98 Td (package has a known CVE) Tj ET
+0.080 0.330 0.560 rg BT /F2 16.00 Tf 58.00 484.98 Td (Internal vs External Working Mechanism in One View) Tj ET
+0.880 0.600 0.200 rg 44.00 482.98 6.00 18.00 re f
+0.840 0.880 0.900 RG 1.10 w 58.00 479.98 m 537.00 479.98 l S
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 455.95 Td (Internally, SonarQube parses code, builds semantic models, runs rules, calculates) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 438.93 Td (measures, and stores issue history. Externally, it plugs into SCM, CI, IDEs, and) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 421.90 Td (dashboards so teams can act on those findings during development and release) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 404.88 Td (workflows.) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 379.86 Td (Another way to say it:) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 355.06 Td (internal mechanism explains how SonarQube detects and organizes findings) Tj ET
+0.880 0.600 0.200 rg 64.00 359.06 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 336.26 Td (external mechanism explains how SonarQube exchanges data with builds,) Tj ET
+0.880 0.600 0.200 rg 64.00 340.26 6.00 6.00 re f
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 82.00 319.46 Td (repositories, developers, and governance processes) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 300.43 Td (That difference is the key to understanding the product architecture. The scanner and) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 283.41 Td (analyzers do the technical inspection. The server, dashboards, and integrations turn) Tj ET
+0.130 0.150 0.190 rg BT /F1 11.20 Tf 58.00 266.38 Td (that inspection into team behavior.) Tj ET
+0.840 0.880 0.900 RG 1.00 w 58.00 44.00 m 537.00 44.00 l S
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 58.00 34.00 Td (SonarQube: Detailed Study Notes) Tj ET
+0.420 0.460 0.510 rg BT /F3 9.00 Tf 478.50 34.00 Td (Page 13 of 13) Tj ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 29 0 R >>
+endobj
+31 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+32 0 obj
+<< /Title (SonarQube: Detailed Study Notes) /Author (Codex) /Producer (Codex PDF Renderer) >>
+endobj
+xref
+0 33
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000000238 00000 n 
+0000000379 00000 n 
+0000004390 00000 n 
+0000004536 00000 n 
+0000009481 00000 n 
+0000009627 00000 n 
+0000014539 00000 n 
+0000014686 00000 n 
+0000019471 00000 n 
+0000019619 00000 n 
+0000024542 00000 n 
+0000024690 00000 n 
+0000029224 00000 n 
+0000029372 00000 n 
+0000034020 00000 n 
+0000034168 00000 n 
+0000038774 00000 n 
+0000038922 00000 n 
+0000043597 00000 n 
+0000043745 00000 n 
+0000048115 00000 n 
+0000048263 00000 n 
+0000052981 00000 n 
+0000053129 00000 n 
+0000058064 00000 n 
+0000058212 00000 n 
+0000062067 00000 n 
+0000062215 00000 n 
+0000062265 00000 n 
+trailer
+<< /Size 33 /Root 31 0 R /Info 32 0 R >>
+startxref
+62375
+%%EOF
