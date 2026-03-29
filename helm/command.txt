@@ -1,0 +1,46 @@
+Helm Most-Used Commands
+
+1. helm create mychart
+Use: Scaffold a new Helm chart with the default folder structure.
+
+2. helm lint ./mychart
+Use: Validate the chart structure and template syntax before deployment.
+
+3. helm template myrelease ./mychart
+Use: Render Kubernetes YAML locally without applying anything to the cluster.
+
+4. helm install myrelease ./mychart
+Use: Install a chart as a new release in the cluster.
+
+5. helm install myrelease ./mychart -n dev --create-namespace
+Use: Install a release into a specific namespace and create the namespace if it does not already exist.
+
+6. helm upgrade myrelease ./mychart
+Use: Apply chart or values changes to an existing release.
+
+7. helm upgrade --install myrelease ./mychart
+Use: Install the release if it does not exist, or upgrade it if it already exists.
+
+8. helm rollback myrelease 1
+Use: Roll back a release to a previous revision.
+
+9. helm history myrelease
+Use: Show release revision history before rollback or troubleshooting.
+
+10. helm uninstall myrelease
+Use: Remove a Helm release and the resources managed by it.
+
+11. helm repo add bitnami https://charts.bitnami.com/bitnami
+Use: Add a chart repository to the local Helm client.
+
+12. helm repo update
+Use: Refresh chart metadata for the repositories already added locally.
+
+13. helm search repo nginx
+Use: Search locally added repositories for matching charts.
+
+14. helm show values bitnami/nginx
+Use: View the default values of a chart before creating a custom values file.
+
+15. helm test myrelease
+Use: Run chart-defined tests after install or upgrade.

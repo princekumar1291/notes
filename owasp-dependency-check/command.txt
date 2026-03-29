@@ -1,0 +1,31 @@
+OWASP Dependency-Check Most-Used Commands
+
+1. dependency-check.sh --project "my-app" --scan . --format HTML --out reports
+Use: Scan the current project and generate an HTML report in the reports folder.
+
+2. dependency-check.sh --project "my-app" --scan . --format JSON --out reports
+Use: Generate a JSON report for machine-readable processing or archiving.
+
+3. dependency-check.sh --project "my-app" --scan . --format SARIF --out reports
+Use: Generate SARIF output for code-scanning style integrations.
+
+4. dependency-check.sh --project "my-app" --scan . --failOnCVSS 7
+Use: Return a failing exit code when vulnerabilities with CVSS 7 or higher are found.
+
+5. dependency-check.sh --project "my-app" --scan . --suppression suppressions.xml
+Use: Apply a suppression file to hide reviewed false positives.
+
+6. dependency-check.sh --project "my-app" --scan . --exclude "**/node_modules/**"
+Use: Exclude noisy or irrelevant paths from the scan.
+
+7. dependency-check.sh --updateonly
+Use: Update the vulnerability database without running a scan.
+
+8. dependency-check.sh --project "my-app" --scan . --noupdate
+Use: Run a scan without refreshing vulnerability data first.
+
+9. dependency-check.sh --project "my-app" --scan . --prettyPrint --format JSON --out reports
+Use: Generate readable JSON output for easier manual inspection.
+
+10. dependency-check.sh --advancedHelp
+Use: Show the extended CLI help with additional arguments and analyzers.

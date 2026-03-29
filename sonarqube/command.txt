@@ -1,0 +1,31 @@
+SonarQube Most-Used Commands
+
+1. sonar-scanner
+Use: Run SonarQube analysis for projects that do not use a build-tool-specific scanner.
+
+2. sonar-scanner -Dsonar.projectKey=my-project -Dsonar.sources=src -Dsonar.host.url=http://localhost:9000 -Dsonar.token=$SONAR_TOKEN
+Use: Run a one-off CLI analysis with the key analysis properties passed directly on the command line.
+
+3. mvn clean verify sonar:sonar
+Use: Build, test, and analyze a Maven project with SonarQube in one flow.
+
+4. ./gradlew sonar
+Use: Run SonarQube analysis for a Gradle project using the SonarScanner for Gradle plugin.
+
+5. dotnet sonarscanner begin /k:"my-project" /d:sonar.host.url="http://localhost:9000" /d:sonar.token="$SONAR_TOKEN"
+Use: Start SonarQube analysis for a .NET project before the build step.
+
+6. dotnet build
+Use: Build the .NET project between the SonarScanner begin and end steps.
+
+7. dotnet sonarscanner end /d:sonar.token="$SONAR_TOKEN"
+Use: Finish the .NET analysis and upload the results to SonarQube.
+
+8. sonar-scanner -Dsonar.projectBaseDir=/path/to/project
+Use: Run analysis from a different working directory when the project root is not the current shell directory.
+
+9. sonar-scanner -Dsonar.qualitygate.wait=true
+Use: Ask the scanner to wait for the quality gate result before returning.
+
+10. SONAR_HOST_URL=http://localhost:9000 sonar-scanner
+Use: Provide the SonarQube server URL through an environment variable instead of putting it in a project file.

@@ -1,0 +1,157 @@
+Trivy Most-Used Commands
+
+Only validated or safe generic commands are listed below.
+Use placeholders like `<image>`, `<repo-url>`, `<namespace>`, and `<service-name>` where needed.
+
+==================================================
+1. Install and Check Version
+==================================================
+
+brew install trivy
+Use: Install the Trivy CLI on macOS or Linux with Homebrew.
+
+trivy --version
+Use: Verify that Trivy is installed and check the current version.
+
+==================================================
+2. Core Image Scanning
+==================================================
+
+trivy image python:3.4-alpine
+Use: Scan a container image for vulnerabilities and secrets. This is an official example and a good first test.
+
+trivy image --severity HIGH,CRITICAL alpine:3.15
+Use: Show only high and critical findings for faster triage.
+
+trivy image --ignore-unfixed alpine:3.15
+Use: Hide findings that do not yet have a fix available.
+
+trivy image --format json --output result.json alpine:3.15
+Use: Save scan results in JSON format for automation or later review.
+
+trivy image --format cyclonedx --output result.cdx alpine:3.15
+Use: Export scan output in CycloneDX format for SBOM and supply-chain workflows.
+
+trivy image --format spdx-json --output result.json alpine:3.15
+Use: Export scan output in SPDX JSON format.
+
+trivy image --input ruby-3.1.tar
+Use: Scan an image from a tar archive instead of pulling by image name.
+
+trivy image --severity HIGH,CRITICAL --ignore-unfixed --exit-code 1 <image>
+Use: Fail CI only when high or critical actionable findings are present.
+
+trivy image --pkg-types library <image>
+Use: Focus on application/library vulnerabilities instead of scanning both OS and library packages.
+
+trivy image --scanners vuln <image>
+Use: Run only vulnerability scanning and skip other scanner types.
+
+==================================================
+3. Filesystem and Repository Scanning
+==================================================
+
+trivy fs .
+Use: Scan the current local project directory.
+
+trivy fs /path/to/your_project
+Use: Scan a specific local project directory by path.
+
+trivy fs --scanners vuln,misconfig,secret .
+Use: Explicitly scan for vulnerabilities, misconfigurations, and secrets in a local directory.
+
+trivy repo https://github.com/knqyf263/trivy-ci-test
+Use: Scan a remote Git repository directly.
+
+trivy repo /path/to/your/repository
+Use: Scan a local Git repository by path.
+
+==================================================
+4. Config, Kubernetes, and SBOM Scanning
+==================================================
+
+trivy config .
+Use: Scan Dockerfiles, Kubernetes YAML, Terraform, and other IaC/config files for misconfigurations.
+
+trivy k8s --report summary
+Use: Run a summarized Kubernetes cluster scan.
+
+trivy k8s --include-namespaces kube-system --report summary
+Use: Limit Kubernetes scanning to a specific namespace.
+
+trivy k8s kind-kind --report summary
+Use: Scan a specific Kubernetes context.
+
+trivy sbom /path/to/report.cdx
+Use: Scan a CycloneDX SBOM for vulnerabilities and licenses.
+
+==================================================
+5. Trivy Server Mode
+==================================================
+
+trivy server
+Use: Start Trivy in server mode for client/server scanning.
+
+trivy server --listen 0.0.0.0:4954
+Use: Start Trivy server and listen on a specific address and port.
+
+trivy image --server http://127.0.0.1:4954 alpine:latest
+Use: Scan an image through a running Trivy server in client mode.
+
+kubectl port-forward svc/<service-name> 9000:4954 -n <namespace>
+Use: Expose a Trivy server running inside Kubernetes to localhost, then point the CLI to `http://localhost:9000`.
+
+==================================================
+6. Trivy Operator with Helm
+==================================================
+
+helm repo add aqua https://aquasecurity.github.io/helm-charts/
+Use: Add the official Aqua Helm repository.
+
+helm repo update
+Use: Refresh Helm repository metadata before installation or upgrade.
+
+helm install trivy-operator aqua/trivy-operator --namespace trivy-system --create-namespace --version 0.32.1
+Use: Install Trivy Operator in Kubernetes using the official Helm chart example from the docs.
+
+helm uninstall trivy-operator -n trivy-system
+Use: Uninstall Trivy Operator from the cluster.
+
+kubectl logs deployment/trivy-operator -n trivy-system
+Use: Check operator logs when the deployment is not behaving as expected.
+
+==================================================
+7. AWS ECR Example
+==================================================
+
+trivy image <account-id>.dkr.ecr.<region>.amazonaws.com/<repository>:<tag>
+Use: Scan an image stored in AWS ECR by full image URI.
+
+trivy image --severity HIGH,CRITICAL --format json --output trivy-report.json <account-id>.dkr.ecr.<region>.amazonaws.com/<repository>:<tag>
+Use: Scan an ECR image and export the results as JSON.
+
+==================================================
+8. Report Export and Templates
+==================================================
+
+curl -o html.tpl https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/html.tpl
+Use: Download the official HTML report template from the Trivy repository.
+
+trivy image --format template --template "@html.tpl" --output trivy-report.html <image>
+Use: Generate an HTML report for an image scan.
+
+trivy image --format json --output trivy-report.json <image>
+Use: Save scan results in JSON format.
+
+trivy image --format sarif --output trivy-report.sarif <image>
+Use: Export results in SARIF format for security dashboard integrations.
+
+==================================================
+9. Helpful Rules
+==================================================
+
+Use these corrected command forms:
+
+- `trivy --version`
+- `trivy fs .`
+- `trivy image --format spdx-json --output result.json alpine:3.15`
